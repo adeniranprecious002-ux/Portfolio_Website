@@ -1,203 +1,183 @@
-// ============================================
+// ================================================
 //  ADENIRAN PRECIOUS ADEBAYO — Portfolio JS
-// ============================================
+//  Clean, modern, no dependencies
+// ================================================
 
-// ----- SELECTORS -----
-const menuIcon = document.querySelector('#menu-icon');
-const navbar = document.querySelector('.navbar');
-const header = document.querySelector('.header');
-const sections = document.querySelectorAll('section');
+// ---- SELECTORS ----
+const header = document.getElementById('header');
+const menuBtn = document.getElementById('menu-btn');
+const navbar = document.getElementById('navbar');
+const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.navbar a');
-const contactForm = document.querySelector('.contact-form');
+const contactForm = document.getElementById('contact-form');
+const feedback = document.getElementById('form-feedback');
+const typedEl = document.getElementById('typed-role');
 
-// ============================================
-// 1. MOBILE MENU TOGGLE
-// ============================================
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+// ================================================
+// 1. STICKY HEADER + ACTIVE NAV
+// ================================================
+const onScroll = () => {
+    // Sticky background
+    header.classList.toggle('scrolled', window.scrollY > 40);
 
-// ============================================
-// 2. STICKY HEADER + ACTIVE NAV ON SCROLL
-// ============================================
-window.onscroll = () => {
-
-    // Sticky header
-    header.classList.toggle('sticky', window.scrollY > 50);
-
-    // Active nav link highlight
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 120;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(link => link.classList.remove('active'));
-            const activeLink = document.querySelector(`.navbar a[href*="${id}"]`);
-            if (activeLink) activeLink.classList.add('active');
+    // Highlight active nav link
+    const scrollY = window.scrollY + 120;
+    sections.forEach(section => {
+        if (
+            scrollY >= section.offsetTop &&
+            scrollY < section.offsetTop + section.offsetHeight
+        ) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            const link = document.querySelector(`.navbar a[href="#${section.id}"]`);
+            if (link) link.classList.add('active');
         }
     });
-
-    // Close mobile menu on scroll
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
 };
 
-// ============================================
-// 3. CLOSE MENU WHEN NAV LINK IS CLICKED
-// ============================================
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll(); // run once on load
+
+// ================================================
+// 2. MOBILE MENU TOGGLE
+// ================================================
+menuBtn.addEventListener('click', () => {
+    const isOpen = navbar.classList.toggle('open');
+    menuBtn.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+
+// Close menu on nav link click
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
+        navbar.classList.remove('open');
+        menuBtn.classList.remove('open');
+        document.body.style.overflow = '';
     });
 });
 
-// ============================================
-// 4. SCROLL REVEAL ANIMATIONS
-// ============================================
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            // Stop observing once visible — no need to re-trigger
-            revealObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.1 });
+// ================================================
+// 3. SCROLL REVEAL
+// ================================================
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+);
 
-// Observe all sections and portfolio cards
-document.querySelectorAll('section, .portfolio-card, .service-box').forEach(el => {
+document.querySelectorAll(
+    'section, .service-card, .port-card, .skill-tag, .blog-featured'
+).forEach((el, i) => {
     el.classList.add('reveal');
+    // Stagger cards within their parent
+    if (el.matches('.service-card, .port-card, .skill-tag')) {
+        const siblings = el.parentElement.querySelectorAll(el.tagName + ', .service-card, .port-card, .skill-tag');
+        const idx = Array.from(siblings).indexOf(el);
+        el.style.transitionDelay = `${idx * 0.06}s`;
+    }
     revealObserver.observe(el);
 });
 
-// ============================================
-// 5. CONTACT FORM — n8n WEBHOOK
-// ============================================
-
-// 🔁 Replace this with your actual n8n webhook URL when ready
-const N8N_WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE';
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-
-        // Get form values
-        const name = contactForm.querySelector('input[type="text"]').value.trim();
-        const email = contactForm.querySelector('input[type="email"]').value.trim();
-        const message = contactForm.querySelector('textarea').value.trim();
-
-        // Basic validation
-        if (!name || !email || !message) {
-            showFormMessage('Please fill in all fields.', 'error');
-            return;
-        }
-
-        // Loading state
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-
-        try {
-            const response = await fetch(N8N_WEBHOOK_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, message })
-            });
-
-            if (response.ok) {
-                showFormMessage('Message sent! I will get back to you shortly.', 'success');
-                contactForm.reset();
-            } else {
-                throw new Error('Server error');
-            }
-
-        } catch (error) {
-            showFormMessage('Something went wrong. Please try again or email me directly.', 'error');
-        } finally {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
-    });
-}
-
-// Helper: show form feedback message
-function showFormMessage(msg, type) {
-    // Remove existing message if any
-    const existing = document.querySelector('.form-message');
-    if (existing) existing.remove();
-
-    const div = document.createElement('div');
-    div.className = `form-message ${type}`;
-    div.textContent = msg;
-
-    // Style inline so it works without extra CSS
-    div.style.cssText = `
-        margin-top: 12px;
-        padding: 10px 16px;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: 500;
-        background: ${type === 'success' ? '#0d3b2e' : '#3b0d0d'};
-        color: ${type === 'success' ? '#4ade80' : '#f87171'};
-        border: 1px solid ${type === 'success' ? '#16a34a' : '#dc2626'};
-    `;
-
-    contactForm.appendChild(div);
-
-    // Auto-remove after 5 seconds
-    setTimeout(() => div.remove(), 5000);
-}
-
-// ============================================
-// 6. TYPED TEXT EFFECT (Home Section)
-// ============================================
-const typedTarget = document.querySelector('.home-content h3');
-
-if (typedTarget) {
+// ================================================
+// 4. TYPED TEXT EFFECT
+// ================================================
+if (typedEl) {
     const roles = [
         'Embedded Systems Engineer',
         'IoT Developer',
         'AI Automation Specialist',
         'Firmware Developer',
+        'TinyML Practitioner',
     ];
 
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+    let rIdx = 0, cIdx = 0, deleting = false;
 
-    function type() {
-        const currentRole = roles[roleIndex];
+    const type = () => {
+        const role = roles[rIdx];
+        typedEl.textContent = deleting
+            ? role.slice(0, cIdx - 1)
+            : role.slice(0, cIdx + 1);
 
-        if (isDeleting) {
-            typedTarget.textContent = currentRole.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            typedTarget.textContent = currentRole.substring(0, charIndex + 1);
-            charIndex++;
+        deleting ? cIdx-- : cIdx++;
+
+        if (!deleting && cIdx === role.length) {
+            deleting = true;
+            setTimeout(type, 2200);
+            return;
         }
+        if (deleting && cIdx === 0) {
+            deleting = false;
+            rIdx = (rIdx + 1) % roles.length;
+        }
+        setTimeout(type, deleting ? 40 : 80);
+    };
 
-        // Finished typing
-        if (!isDeleting && charIndex === currentRole.length) {
-            isDeleting = true;
-            setTimeout(type, 1800); // Pause before deleting
+    setTimeout(type, 1000);
+}
+
+// ================================================
+// 5. CONTACT FORM — n8n WEBHOOK
+// ================================================
+
+// 🔁 Replace with your actual n8n webhook URL
+const N8N_WEBHOOK = 'YOUR_N8N_WEBHOOK_URL_HERE';
+
+const showFeedback = (msg, type) => {
+    feedback.textContent = msg;
+    feedback.className = `form-feedback ${type}`;
+    setTimeout(() => {
+        feedback.textContent = '';
+        feedback.className = 'form-feedback';
+    }, 6000);
+};
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const name = contactForm.name.value.trim();
+        const email = contactForm.email.value.trim();
+        const message = contactForm.message.value.trim();
+
+        if (!name || !email || !message) {
+            showFeedback('Please fill in all fields.', 'error');
             return;
         }
 
-        // Finished deleting
-        if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            roleIndex = (roleIndex + 1) % roles.length;
+        // Check webhook is configured
+        if (N8N_WEBHOOK === 'YOUR_N8N_WEBHOOK_URL_HERE') {
+            showFeedback('Contact form not yet configured. Please email me directly.', 'error');
+            return;
         }
 
-        setTimeout(type, isDeleting ? 50 : 90);
-    }
+        const origText = btn.textContent;
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
 
-    // Start typing after a short delay
-    setTimeout(type, 800);
+        try {
+            const res = await fetch(N8N_WEBHOOK, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, message }),
+            });
+
+            if (res.ok) {
+                showFeedback('Message sent! I\'ll get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Server error');
+            }
+        } catch {
+            showFeedback('Something went wrong. Please email me directly.', 'error');
+        } finally {
+            btn.textContent = origText;
+            btn.disabled = false;
+        }
+    });
 }

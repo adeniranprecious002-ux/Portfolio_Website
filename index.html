@@ -3,380 +3,354 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adeniran Precious Adebayo | Embedded System Engineer</title>
-
-    <!-- box icons -->
+    <title>Adeniran Precious Adebayo — Embedded Systems & AI Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- header section starts -->
+    <!-- HEADER -->
     <header class="header" id="header">
-        <a href="#" class="logo">
-            <img src="images/Logo.png" alt="APALogo" class="logo-img">
-        </a>
-
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+        <a href="#home" class="logo">APA<span class="logo-dot">.</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#blog">Blog</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
     </header>
 
-    <!-- home section starts -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Adeniran Precious</h1>
-            <h1>Adebayo</h1>
-            <h3>Embedded Systems Engineer & AI automation Specialist</h3>
-            <p>I am a passionate embedded systems engineer and AI automation specialist with expertise in designing and
-                implementing intelligent systems for various applications.</p>
-        </div>
-        <div class="home-img">
-            <img src="images/professional_headshot.jpg" alt="home image">
-        </div>
-        <div class="social-media">
-            <a href="https://x.com/Steven4pera"><i class='bx bxl-twitter'></i></a>
-            <a href="https://instagram.com/preciousade_002"><i class='bx bxl-instagram'></i></a>
-            <a href="https://github.com/adeniranprecious002-ux"><i class='bx bxl-github'></i></a>
-            <a href="https://linkedin.com/in/precious-adeniran-842b58294"><i class='bx bxl-linkedin'></i></a>
-        </div>
-    </section>
-
-    <!-- about section starts -->
-    <section class="about" id="about">
-        <h2 class="section-title">About Myself</h2>
-
-        <p class="about-text">
-            I'm an Electrical and Electronics Engineering graduate with a strong
-            interest in Embedded Systems, Internet of Things, and intelligent
-            automation. I enjoy building systems that combine hardware and software
-            to solve real-world problems.
-        </p>
-
-        <div class="skills-container">
-            <div class="skills-column">
-                <span class="skill-box">Embedded Systems</span>
-                <span class="skill-box">Internet of Things</span>
-                <span class="skill-box">Circuit Design</span>
-                <span class="skill-box">Microcontrollers</span>
-                <span class="skill-box">Robotics</span>
-                <span class="skill-box">Workflow Automation</span>
-                <span class="skill-box">Data Integration</span>
-            </div>
-
-            <div class="skills-column">
-                <span class="skill-box">ROS</span>
-                <span class="skill-box">C / C++</span>
-                <span class="skill-box">Python</span>
-                <span class="skill-box">AI Agent</span>
-                <span class="skill-box">RTOS</span>
-                <span class="skill-box">ML / AI</span>
-                <span class="skill-box">TinyML</span>
-            </div>
-        </div>
-
-        <p class="about-footer">
-            I am passionate about solving problems in creative ways and embedding
-            intelligent software into hardware systems.
-        </p>
-    </section>
-    <!-- about section ends -->
-    </section>
-    <!-- services section starts -->
-    <section class="services" id="services">
-        <h2 class="section-title">Services</h2>
-
-        <div class="services-container">
-            <div class="service-box">
-                <i class='bx bx-chip service-icon'></i>
-                <h3 class="service-title">Embedded Systems Design</h3>
-                <p class="service-desc">Design and program microcontroller-based systems, integrate sensors and
-                    actuators, and build reliable real-time embedded
-                    solutions.</p>
-            </div>
-            <div class="service-box">
-                <i class='bx bx-wifi service-icon'></i>
-                <h3 class="service-title">IoT & Smart Systems</h3>
-                <p class="service-desc">Develop connected devices that collect, transmit, and process data using cloud
-                    platforms and embedded communication
-                    protocols.</p>
-            </div>
-
-            <div class="service-box">
-                <i class='bx bxl-python service-icon'></i>
-                <h3 class="service-title">AI Enhanced Embedded Solution</h3>
-                <p class="service-desc">Apply machine learning and TinyML techniques to embedded systems for intelligent
-                    sensing, prediction, and automation.</p>
-            </div>
-
-            <div class="service-box">
-                <i class='bx bx-cog service-icon'></i>
-                <h3 class="service-title">Automation & Workflow Integration</h3>
-                <p class="service-desc">Build automated workflows and integrations using tools like Python and
-                    automation platforms to streamline data flow and
-                    system operations.</p>
-            </div>
-
-            <div class="service-box">
-                <i class='bx bx-data service-icon'></i>
-                <h3 class="service-title">Data Systems & Workflow Automation</h3>
-                <p class="service-desc">
-                    Design and automate structured data systems using tools like Airtable and
-                    CRM platforms, integrating forms, APIs, and automation logic to manage leads,
-                    operations, and internal workflows efficiently.
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="hero-status">
+                    <span class="status-dot"></span>
+                    Available for projects
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-first">Adeniran</span>
+                    <span class="name-last">Precious<br>Adebayo</span>
+                </h1>
+                <p class="hero-role" id="typed-role"></p>
+                <p class="hero-bio">
+                    I design and build intelligent systems at the intersection of hardware and software — from
+                    bare-metal firmware to AI-powered automation pipelines.
                 </p>
+                <div class="hero-actions">
+                    <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz" target="_blank"
+                        class="btn btn-primary">Download CV</a>
+                    <a href="#portfolio" class="btn btn-ghost">View Work</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/adeniranprecious002-ux" target="_blank" aria-label="GitHub"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://linkedin.com/in/precious-adeniran-842b58294" target="_blank"
+                        aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://medium.com/@adeniranprecious002" target="_blank" aria-label="Medium"><i
+                            class='bx bxl-medium'></i></a>
+                    <a href="https://x.com/Steven4pera" target="_blank" aria-label="Twitter"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://instagram.com/preciousade_002" target="_blank" aria-label="Instagram"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
             </div>
-
-            <div class="service-box">
-                <i class='bx bx-chalkboard service-icon'></i>
-                <h3 class="service-title">Technical Training & Mentorship</h3>
-                <p class="service-desc">Deliver beginner-friendly training and mentorship in embedded systems, IoT, and
-                    automation technologies.</p>
-            </div>
-
-            <div class="service-box">
-                <i class='bx bx-bot service-icon'></i>
-                <h3 class="service-title">AI Chatbot & Conversational Systems</h3>
-                <p class="service-desc">
-                    Design and deploy intelligent AI chatbots using Voiceflow and OpenAI APIs,
-                    integrating them with CRMs, databases, and workflow engines for automated
-                    customer support and smart lead qualification.
-                </p>
-            </div>
-
-            <div class="service-box">
-                <i class='bx bx-network-chart service-icon'></i>
-                <h3 class="service-title">AI Workflow Architecture & Integration</h3>
-                <p class="service-desc">
-                    Architect scalable AI-driven automation systems by connecting APIs,
-                    cloud services, and backend logic using tools like n8n and Python to
-                    create intelligent, data-driven business workflows.
-                </p>
-            </div>
-
-        </div>
-    </section>
-    <!-- services section ends -->
-    <!-- blog section starts -->
-    <section class="Blog" id="blog">
-        <h2 class="section-title">Blog</h2>
-
-        <div class="blog-container">
-
-            <h1 class="blog-title">
-                How I Combine Embedded Systems with Automation to Build Smarter Solutions
-            </h1>
-
-            <p class="blog-meta">
-                <span>By Adeniran Precious Adebayo</span> ·
-                <span>Embedded Systems & Automation</span>
-            </p>
-
-            <article class="blog-content">
-
-                <p>
-                    As an Electrical and Electronics Engineering graduate with a strong interest
-                    in embedded systems, I've always enjoyed working close to the hardware —
-                    microcontrollers, sensors, and real-world signals. Over time, I realized
-                    that the real power of embedded systems comes when they are connected,
-                    automated, and able to interact intelligently with other systems.
-                </p>
-
-                <p>
-                    This post explains how I approach building solutions that combine
-                    <strong>embedded systems</strong>, <strong>IoT</strong>, and
-                    <strong>automation</strong>, with AI used only where it truly adds value.
-                </p>
-
-                <h2>Embedded Systems: The Foundation</h2>
-                <p>
-                    Every system I build starts at the embedded level. This includes selecting
-                    the right microcontroller, interfacing sensors and actuators, writing
-                    efficient firmware, and managing timing, power, and reliability.
-                </p>
-
-                <p>
-                    For me, embedded systems are about creating reliable systems that interact
-                    with the physical world. If the embedded layer is unstable, no amount of
-                    cloud or AI processing can fix it.
-                </p>
-
-                <h2>Connecting Devices: IoT & Data Flow</h2>
-                <p>
-                    Once the embedded system is stable, the next step is connectivity.
-                    I design IoT pipelines where devices collect real-world data and transmit
-                    it using protocols such as HTTP or MQTT to cloud platforms or databases.
-                </p>
-
-                <h2>Automation: Making Systems Useful</h2>
-                <p>
-                    Using tools like Python, APIs, Airtable, and CRM systems, I build automated
-                    workflows that process data, trigger actions, and reduce manual
-                    intervention. Automation turns raw sensor data into usable information.
-                </p>
-
-                <h2>Where AI Fits (and Where It Doesn't)</h2>
-                <p>
-                    I treat AI as a supporting tool, not the centerpiece. It is applied only
-                    where it enhances decision-making, pattern recognition, or system
-                    intelligence. When simple logic is more efficient, I choose simplicity.
-                </p>
-
-                <blockquote>
-                    Hardware first. Systems next. Intelligence last.
-                </blockquote>
-
-                <h2>Closing Thoughts</h2>
-                <p>
-                    By combining embedded systems with automation, I aim to build solutions
-                    that are reliable, scalable, and practical. This blog will document my
-                    projects, learning process, and insights as I grow in embedded systems and
-                    intelligent automation.
-                </p>
-
-            </article>
-
-        </div>
-        <p class="blog-footer">
-            This article reflects my approach to building reliable systems by combining
-            embedded hardware with automation.
-            <br><br>
-            To read more of my technical articles and project breakdowns, visit my
-            <a href="https://medium.com/@adeniranprecious002" target="_blank">Medium profile</a>.
-        </p>
-
-    </section>
-    <section class="portfolio" id="portfolio">
-        <h2 class="section-title">Portfolio</h2>
-
-        <div class="portfolio-container">
-
-            <!-- LEFT: IMAGE -->
-            <div class="portfolio-image">
-                <img src="images/MC3.jpg" alt="Embedded system project">
-            </div>
-
-            <!-- RIGHT: CARDS -->
-            <div class="portfolio-cards">
-
-                <a href="https://drive.google.com/drive/folders/1THI7vRfdokV1b9bIznCTzbc6G9oi2zVI?usp=sharing" target="_blank"
-                    class="portfolio-link">
-                    <div class="portfolio-card">
-                         <h3>My Academic Curriculum Vitae</h3>
-                         <p>
-                            A comprehensive summary of my academic background, research endeavors, and professional
-                            experience.
-                         </p>
+            <div class="hero-right">
+                <div class="hero-photo-wrap">
+                    <img src="images/professional_headshot.jpg" alt="Adeniran Precious Adebayo" class="hero-photo" />
+                    <div class="photo-ring"></div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">2+</span>
+                        <span class="stat-label">Years building</span>
                     </div>
-                </a>
+                    <div class="stat">
+                        <span class="stat-num">8+</span>
+                        <span class="stat-label">Services offered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">∞</span>
+                        <span class="stat-label">Problems to solve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <i class='bx bx-chevron-down'></i>
+        </div>
+    </section>
 
-                <div class="portfolio-card">
-                    <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz?usp=sharing" target="_blank" class="portfolio-link">
-                        <h3>Download Resume</h3>
-                        <p>
-                            A copy of my professional resume.
-                        </p>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-tag">01 — About</span>
+            <h2 class="section-title">Background &amp; Skills</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text-col">
+                <p>I'm an Electrical and Electronics Engineering graduate with deep interest in Embedded Systems,
+                    Internet of Things, and intelligent automation. I enjoy building systems that combine hardware and
+                    software to solve real-world problems.</p>
+                <p>My philosophy is simple: <em>hardware first, systems next, intelligence last</em>. Every layer must
+                    be solid before adding the next. This means reliable firmware before connectivity, and clean data
+                    pipelines before AI.</p>
+                <p>I'm passionate about solving problems creatively and embedding intelligent software into hardware
+                    systems that actually work in the real world.</p>
+            </div>
+            <div class="skills-wrap">
+                <div class="skills-col">
+                    <h3 class="skills-heading">Hardware & Systems</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Embedded Systems</span>
+                        <span class="skill-tag">Microcontrollers</span>
+                        <span class="skill-tag">Circuit Design</span>
+                        <span class="skill-tag">RTOS</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">ROS</span>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <h3 class="skills-heading">Software & AI</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TinyML</span>
+                        <span class="skill-tag">ML / AI</span>
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">Data Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-tag">02 — Services</span>
+            <h2 class="section-title">What I Build</h2>
+        </div>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-num">01</div>
+                <i class='bx bx-chip service-icon'></i>
+                <h3>Embedded Systems Design</h3>
+                <p>Design and program microcontroller-based systems, integrate sensors and actuators, and build reliable
+                    real-time embedded solutions.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-num">02</div>
+                <i class='bx bx-wifi service-icon'></i>
+                <h3>IoT &amp; Smart Systems</h3>
+                <p>Connected devices that collect, transmit, and process data using cloud platforms and embedded
+                    communication protocols.</p>
+            </div>
+
+            <div class="service-card featured">
+                <div class="service-num">03</div>
+                <i class='bx bxl-python service-icon'></i>
+                <h3>AI-Enhanced Embedded Solutions</h3>
+                <p>Apply machine learning and TinyML to embedded systems for intelligent sensing, prediction, and
+                    automation at the edge.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-num">04</div>
+                <i class='bx bx-cog service-icon'></i>
+                <h3>Automation &amp; Workflow Integration</h3>
+                <p>Build automated workflows using Python and automation platforms to streamline data flow and system
+                    operations.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-num">05</div>
+                <i class='bx bx-data service-icon'></i>
+                <h3>Data Systems &amp; CRM Automation</h3>
+                <p>Design structured data systems using Airtable and CRM platforms, integrating forms, APIs, and logic
+                    to manage leads and workflows.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-num">06</div>
+                <i class='bx bx-bot service-icon'></i>
+                <h3>AI Chatbot &amp; Conversational Systems</h3>
+                <p>Intelligent chatbots using Voiceflow and OpenAI APIs, integrated with CRMs, databases, and workflow
+                    engines.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-num">07</div>
+                <i class='bx bx-network-chart service-icon'></i>
+                <h3>AI Workflow Architecture</h3>
+                <p>Scalable AI-driven automation systems connecting APIs, cloud services, and backend logic with n8n and
+                    Python.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-num">08</div>
+                <i class='bx bx-chalkboard service-icon'></i>
+                <h3>Technical Training &amp; Mentorship</h3>
+                <p>Beginner-friendly training and mentorship in embedded systems, IoT, and automation technologies.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog" id="blog">
+        <div class="section-header">
+            <span class="section-tag">03 — Blog</span>
+            <h2 class="section-title">Latest Writing</h2>
+        </div>
+        <div class="blog-featured">
+            <div class="blog-featured-meta">
+                <span class="blog-cat">Embedded Systems &amp; Automation</span>
+                <span class="blog-date">Featured Article</span>
+            </div>
+            <h2 class="blog-featured-title">How I Combine Embedded Systems with Automation to Build Smarter Solutions
+            </h2>
+            <p class="blog-featured-excerpt">
+                Every system I build starts at the embedded level — selecting the right microcontroller, writing
+                efficient firmware, and managing timing, power, and reliability. Once that layer is solid, connectivity
+                and automation follow. AI enters last, only where it genuinely adds value.
+            </p>
+            <blockquote class="blog-quote">Hardware first. Systems next. Intelligence last.</blockquote>
+            <a href="https://medium.com/@adeniranprecious002" target="_blank" class="btn btn-primary">Read on Medium
+                →</a>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header">
+            <span class="section-tag">04 — Portfolio</span>
+            <h2 class="section-title">Selected Work</h2>
+        </div>
+        <div class="portfolio-grid">
+
+            <a href="https://drive.google.com/drive/folders/1THI7vRfdokV1b9bIznCTzbc6G9oi2zVI" target="_blank"
+                class="port-card">
+                <span class="port-num">01</span>
+                <div class="port-body">
+                    <h3>Academic Curriculum Vitae</h3>
+                    <p>Academic background, research endeavors, and professional experience in full detail.</p>
+                </div>
+                <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz" target="_blank"
+                class="port-card">
+                <span class="port-num">02</span>
+                <div class="port-body">
+                    <h3>Professional Resume</h3>
+                    <p>A copy of my professional resume ready to download.</p>
+                </div>
+                <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+            </a>
+
+            <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="port-card">
+                <span class="port-num">03</span>
+                <div class="port-body">
+                    <h3>Hardware Projects Repository</h3>
+                    <p>Collection of embedded systems, electronics, and AI automation projects.</p>
+                </div>
+                <span class="port-link">GitHub <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1QxUGZBhbAkXLrJyUnnnuO_PR1xV2LHN1" target="_blank"
+                class="port-card">
+                <span class="port-num">04</span>
+                <div class="port-body">
+                    <h3>AI Automation Demonstrations</h3>
+                    <p>Real-world automation systems showcasing AI workflows and API integrations.</p>
+                </div>
+                <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+            </a>
+
+            <a href="https://medium.com/@adeniranprecious002" target="_blank" class="port-card">
+                <span class="port-num">05</span>
+                <div class="port-body">
+                    <h3>Blog Posts on IoT &amp; Embedded Systems</h3>
+                    <p>Articles on embedded systems, AI automation, and real-world engineering problem solving.</p>
+                </div>
+                <span class="port-link">Medium <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+            </a>
+
+            <div class="port-card port-card--muted">
+                <span class="port-num">06</span>
+                <div class="port-body">
+                    <h3>Academic Publications</h3>
+                    <p>Research papers and technical publications in Embedded Systems and Electronics.</p>
+                </div>
+                <span class="port-link port-link--muted">Coming soon</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-tag">05 — Contact</span>
+            <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-left">
+                <p class="contact-intro">Interested in collaborating, hiring, or discussing embedded systems and
+                    automation? I'm always open to meaningful conversations.</p>
+                <div class="contact-links">
+                    <a href="mailto:adeniranprecious002@gmail.com" class="contact-link">
+                        <i class='bx bx-envelope'></i>
+                        <span>adeniranprecious002@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/precious-adeniran-842b58294" target="_blank" class="contact-link">
+                        <i class='bx bxl-linkedin'></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="contact-link">
+                        <i class='bx bxl-github'></i>
+                        <span>GitHub</span>
                     </a>
                 </div>
-                <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="portfolio-link">
-                    <div class="portfolio-card">
-                        <h3>My Hardware Projects Repository</h3>
-                        <p>
-                            Collection of embedded systems, electronics, and AI Automation projects.
-                        </p>
-                    </div>
-                </a>
-
-                <div class="portfolio-card">
-                    <h3>Academic Publications</h3>
-                    <p>
-                        Research papers and technical publications in Embedded Systems and Electronics.
-                    </p>
-                </div>
-                <a href="https://medium.com/@adeniranprecious002" target="_blank" class="portfolio-link">
-                    <div class="portfolio-card">
-                        <h3>My Blogposts on IoT & Embedded Systems</h3>
-                        <p>
-                            Articles on embedded systems, AI automation, and real-world engineering problem solving.
-                        </p>
-                    </div>
-                </a>
-                <a href="https://drive.google.com/drive/folders/1QxUGZBhbAkXLrJyUnnnuO_PR1xV2LHN1?usp=drive_link"
-                    target="_blank" class="portfolio-link">
-                    <div class="portfolio-card">
-                        <h3>AI Automation Demonstrations</h3>
-                        <p>
-                            Real-world automation systems showcasing AI workflows and API integrations.
-                        </p>
-                    </div>
-                </a>
-
             </div>
-        </div>
-    </section>
-    <!-- portfolio section ends -->
-    <section class="contact" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-
-        <div class="contact-container">
-            <!-- Contact Form -->
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Gmail address" required>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+            <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your name" required />
+                    <input type="email" name="email" placeholder="Your email" required />
+                </div>
+                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                <div class="form-feedback" id="form-feedback"></div>
             </form>
         </div>
-        <!-- Contact Info -->
-        <p class="contact-text">
-            Interested in collaborating, hiring, or discussing embedded systems and automation?
-            Feel free to reach out. I'm always open to meaningful conversations.
-        </p>
-
-        <div class="contact-info">
-            <div class="contact-item">
-                <a href="mailto:adeniranprecious002@gmail.com" aria-label="Email">
-                    <i class='bx bx-envelope'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/precious-adeniran-842b58294" target="_blank">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-                <a href="https://github.com/adeniranprecious002-ux" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="https://instagram.com/preciousade_002" target="_blank">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-                <a href="https://twitter.com/Steven4pera" target="_blank">
-                    <i class='bx bxl-twitter'></i>
-                </a>
-            </div>
-        </div>
     </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-text">
-            Created by <span>Adeniran Precious Adebayo</span>
+        <div class="footer-left">
+            <span class="footer-logo">APA<span class="logo-dot">.</span></span>
+            <span>Embedded Systems · AI Automation · IoT</span>
         </div>
+        <span class="footer-copy">© 2025 Adeniran Precious Adebayo</span>
     </footer>
-
-    </section>
-
-
 
     <script src="script.js"></script>
 </body>

@@ -5,9 +5,8 @@ Personal portfolio website for **Adeniran Precious Adebayo**, Embedded Systems E
 ---
 
 ## 🔗 Live Site
-**[adeniranprecious.netlify.app](https://adeniranprecious.netlify.app)**
 
-> ⚠️ Update this link once your Netlify URL is confirmed.
+**[adeniranprecious.netlify.app](https://adeniranprecious.netlify.app)**
 
 ---
 
