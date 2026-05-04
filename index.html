@@ -2,357 +2,779 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adeniran Precious Adebayo — Embedded Systems & AI Automation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeniran Precious Adebayo — Embedded Systems & AI Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <a href="#home" class="logo">APA<span class="logo-dot">.</span></a>
-        <nav class="navbar" id="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#blog">Blog</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-    </header>
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">APA<span class="logo-dot">.</span></a>
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#certifications">Certs</a>
+      <a href="#embedded-projects">Embedded</a>
+      <a href="#ai-projects">AI</a>
+      <a href="#blog">Blog</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-inner">
-            <div class="hero-left">
-                <div class="hero-status">
-                    <span class="status-dot"></span>
-                    Available for projects
-                </div>
-                <h1 class="hero-name">
-                    <span class="name-first">Adeniran</span>
-                    <span class="name-last">Precious<br>Adebayo</span>
-                </h1>
-                <p class="hero-role" id="typed-role"></p>
-                <p class="hero-bio">
-                    I design and build intelligent systems at the intersection of hardware and software — from
-                    bare-metal firmware to AI-powered automation pipelines.
-                </p>
-                <div class="hero-actions">
-                    <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz?usp=sharing"
-                        target="_blank" class="btn btn-primary">Download CV</a>
-                    <a href="#portfolio" class="btn btn-ghost">View Work</a>
-                </div>
-                <div class="hero-socials">
-                    <a href="https://github.com/adeniranprecious002-ux" target="_blank" aria-label="GitHub"><i
-                            class='bx bxl-github'></i></a>
-                    <a href="https://linkedin.com/in/precious-adeniran-842b58294" target="_blank"
-                        aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://medium.com/@adeniranprecious002" target="_blank" aria-label="Medium"><i
-                            class='bx bxl-medium'></i></a>
-                    <a href="https://x.com/Steven4pera" target="_blank" aria-label="Twitter"><i
-                            class='bx bxl-twitter'></i></a>
-                    <a href="https://instagram.com/preciousade_002" target="_blank" aria-label="Instagram"><i
-                            class='bx bxl-instagram'></i></a>
-                </div>
-            </div>
-            <div class="hero-right">
-                <div class="hero-photo-wrap">
-                    <img src="images/professional_headshot.jpg" alt="Adeniran Precious Adebayo" class="hero-photo" />
-                    <div class="photo-ring"></div>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-num">2+</span>
-                        <span class="stat-label">Years building</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num">8+</span>
-                        <span class="stat-label">Services offered</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num">∞</span>
-                        <span class="stat-label">Problems to solve</span>
-                    </div>
-                </div>
-            </div>
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Available for projects
         </div>
-        <div class="hero-scroll-hint">
-            <span>Scroll</span>
-            <i class='bx bx-chevron-down'></i>
+        <h1 class="hero-name">
+          <span class="name-first">Adeniran</span>
+          <span class="name-last">Precious<br>Adebayo</span>
+        </h1>
+        <p class="hero-role" id="typed-role"></p>
+        <p class="hero-bio">
+          I design and build intelligent systems at the intersection of hardware and software — from bare-metal firmware
+          to AI-powered automation pipelines.
+        </p>
+        <div class="hero-actions">
+          <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz" target="_blank"
+            class="btn btn-primary">Download CV</a>
+          <a href="#portfolio" class="btn btn-ghost">View Work</a>
         </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="section-header">
-            <span class="section-tag">01 — About</span>
-            <h2 class="section-title">Background &amp; Skills</h2>
+        <div class="hero-socials">
+          <a href="https://github.com/adeniranprecious002-ux" target="_blank" aria-label="GitHub"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://linkedin.com/in/precious-adeniran-842b58294" target="_blank" aria-label="LinkedIn"><i
+              class='bx bxl-linkedin'></i></a>
+          <a href="https://medium.com/@adeniranprecious002" target="_blank" aria-label="Medium"><i
+              class='bx bxl-medium'></i></a>
+          <a href="https://x.com/Steven4pera" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="https://instagram.com/preciousade_002" target="_blank" aria-label="Instagram"><i
+              class='bx bxl-instagram'></i></a>
+          <a href="https://upwork.com/freelancers/~01721e743c53bddd4e" target="_blank" aria-label="Upwork"><i
+              class='bx bxl-upwork'></i></a>
         </div>
-        <div class="about-grid">
-            <div class="about-text-col">
-                <p>I'm an Electrical and Electronics Engineering graduate with deep interest in Embedded Systems,
-                    Internet of Things, and intelligent automation. I enjoy building systems that combine hardware and
-                    software to solve real-world problems.</p>
-                <p>My philosophy is simple: <em>hardware first, systems next, intelligence last</em>. Every layer must
-                    be solid before adding the next. This means reliable firmware before connectivity, and clean data
-                    pipelines before AI.</p>
-                <p>I'm passionate about solving problems creatively and embedding intelligent software into hardware
-                    systems that actually work in the real world.</p>
-            </div>
-            <div class="skills-wrap">
-                <div class="skills-col">
-                    <h3 class="skills-heading">Hardware & Systems</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Embedded Systems</span>
-                        <span class="skill-tag">Microcontrollers</span>
-                        <span class="skill-tag">Circuit Design</span>
-                        <span class="skill-tag">RTOS</span>
-                        <span class="skill-tag">Robotics</span>
-                        <span class="skill-tag">IoT</span>
-                        <span class="skill-tag">ROS</span>
-                    </div>
-                </div>
-                <div class="skills-col">
-                    <h3 class="skills-heading">Software & AI</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">C / C++</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TinyML</span>
-                        <span class="skill-tag">ML / AI</span>
-                        <span class="skill-tag">AI Agents</span>
-                        <span class="skill-tag">Workflow Automation</span>
-                        <span class="skill-tag">Data Integration</span>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <!-- REPLACE: swap src with your actual headshot path -->
+          <img src="images/professional_headshot.jpg" alt="Adeniran Precious Adebayo" class="hero-photo" />
+          <div class="photo-ring"></div>
         </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services" id="services">
-        <div class="section-header">
-            <span class="section-tag">02 — Services</span>
-            <h2 class="section-title">What I Build</h2>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years building</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Services offered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Problems to solve</span>
+          </div>
         </div>
-        <div class="services-grid">
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <i class='bx bx-chevron-down'></i>
+    </div>
+  </section>
 
-            <div class="service-card">
-                <div class="service-num">01</div>
-                <i class='bx bx-chip service-icon'></i>
-                <h3>Embedded Systems Design</h3>
-                <p>Design and program microcontroller-based systems, integrate sensors and actuators, and build reliable
-                    real-time embedded solutions.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-num">02</div>
-                <i class='bx bx-wifi service-icon'></i>
-                <h3>IoT &amp; Smart Systems</h3>
-                <p>Connected devices that collect, transmit, and process data using cloud platforms and embedded
-                    communication protocols.</p>
-            </div>
-
-            <div class="service-card featured">
-                <div class="service-num">03</div>
-                <i class='bx bxl-python service-icon'></i>
-                <h3>AI-Enhanced Embedded Solutions</h3>
-                <p>Apply machine learning and TinyML to embedded systems for intelligent sensing, prediction, and
-                    automation at the edge.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-num">04</div>
-                <i class='bx bx-cog service-icon'></i>
-                <h3>Automation &amp; Workflow Integration</h3>
-                <p>Build automated workflows using Python and automation platforms to streamline data flow and system
-                    operations.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-num">05</div>
-                <i class='bx bx-data service-icon'></i>
-                <h3>Data Systems &amp; CRM Automation</h3>
-                <p>Design structured data systems using Airtable and CRM platforms, integrating forms, APIs, and logic
-                    to manage leads and workflows.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-num">06</div>
-                <i class='bx bx-bot service-icon'></i>
-                <h3>AI Chatbot &amp; Conversational Systems</h3>
-                <p>Intelligent chatbots using Voiceflow and OpenAI APIs, integrated with CRMs, databases, and workflow
-                    engines.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-num">07</div>
-                <i class='bx bx-network-chart service-icon'></i>
-                <h3>AI Workflow Architecture</h3>
-                <p>Scalable AI-driven automation systems connecting APIs, cloud services, and backend logic with n8n and
-                    Python.</p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-num">08</div>
-                <i class='bx bx-chalkboard service-icon'></i>
-                <h3>Technical Training &amp; Mentorship</h3>
-                <p>Beginner-friendly training and mentorship in embedded systems, IoT, and automation technologies.</p>
-            </div>
-
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-tag">01 — About</span>
+      <h2 class="section-title">Background &amp; Skills</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text-col">
+        <p>I'm an Electrical and Electronics Engineering graduate with deep interest in Embedded Systems, Internet of
+          Things, and intelligent automation. I enjoy building systems that combine hardware and software to solve
+          real-world problems.</p>
+        <p>My philosophy is simple: <em>hardware first, systems next, intelligence last</em>. Every layer must be solid
+          before adding the next. This means reliable firmware before connectivity, and clean data pipelines before AI.
+        </p>
+        <p>I'm passionate about solving problems creatively and embedding intelligent software into hardware systems
+          that actually work in the real world.</p>
+      </div>
+      <div class="skills-wrap">
+        <div class="skills-col">
+          <h3 class="skills-heading">Hardware & Systems</h3>
+          <div class="skill-list">
+            <span class="skill-tag">Embedded Systems</span>
+            <span class="skill-tag">Microcontrollers</span>
+            <span class="skill-tag">Circuit Design</span>
+            <span class="skill-tag">RTOS</span>
+            <span class="skill-tag">Robotics</span>
+            <span class="skill-tag">IoT</span>
+            <span class="skill-tag">ROS</span>
+          </div>
         </div>
-    </section>
-
-    <!-- BLOG -->
-    <section class="blog" id="blog">
-        <div class="section-header">
-            <span class="section-tag">03 — Blog</span>
-            <h2 class="section-title">Latest Writing</h2>
+        <div class="skills-col">
+          <h3 class="skills-heading">Software & AI</h3>
+          <div class="skill-list">
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TinyML</span>
+            <span class="skill-tag">ML / AI</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Workflow Automation</span>
+            <span class="skill-tag">Data Integration</span>
+          </div>
         </div>
-        <div class="blog-featured">
-            <div class="blog-featured-meta">
-                <span class="blog-cat">Embedded Systems &amp; Automation</span>
-                <span class="blog-date">Featured Article</span>
-            </div>
-            <h2 class="blog-featured-title">How I Combine Embedded Systems with Automation to Build Smarter Solutions
-            </h2>
-            <p class="blog-featured-excerpt">
-                Every system I build starts at the embedded level — selecting the right microcontroller, writing
-                efficient firmware, and managing timing, power, and reliability. Once that layer is solid, connectivity
-                and automation follow. AI enters last, only where it genuinely adds value.
-            </p>
-            <blockquote class="blog-quote">Hardware first. Systems next. Intelligence last.</blockquote>
-            <a href="https://medium.com/@adeniranprecious002" target="_blank" class="btn btn-primary">Read on Medium
-                →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+       ============================================================ -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <span class="section-tag">02 — Services</span>
+      <h2 class="section-title">What I Build</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <i class='bx bx-chip service-icon'></i>
+        <h3>Embedded Systems Design</h3>
+        <p>Design and program microcontroller-based systems, integrate sensors and actuators, and build reliable
+          real-time embedded solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <i class='bx bx-wifi service-icon'></i>
+        <h3>IoT &amp; Smart Systems</h3>
+        <p>Connected devices that collect, transmit, and process data using cloud platforms and embedded communication
+          protocols.</p>
+      </div>
+
+      <div class="service-card featured">
+        <div class="service-num">03</div>
+        <i class='bx bxl-python service-icon'></i>
+        <h3>AI-Enhanced Embedded Solutions</h3>
+        <p>Apply machine learning and TinyML to embedded systems for intelligent sensing, prediction, and automation at
+          the edge.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <i class='bx bx-cog service-icon'></i>
+        <h3>Automation &amp; Workflow Integration</h3>
+        <p>Build automated workflows using Python and automation platforms to streamline data flow and system
+          operations.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <i class='bx bx-data service-icon'></i>
+        <h3>Data Systems &amp; CRM Automation</h3>
+        <p>Design structured data systems using Airtable and CRM platforms, integrating forms, APIs, and logic to manage
+          leads and workflows.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <i class='bx bx-bot service-icon'></i>
+        <h3>AI Chatbot &amp; Conversational Systems</h3>
+        <p>Intelligent chatbots using Voiceflow and OpenAI APIs, integrated with CRMs, databases, and workflow engines.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">07</div>
+        <i class='bx bx-network-chart service-icon'></i>
+        <h3>AI Workflow Architecture</h3>
+        <p>Scalable AI-driven automation systems connecting APIs, cloud services, and backend logic with n8n and Python.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-num">08</div>
+        <i class='bx bx-chalkboard service-icon'></i>
+        <h3>Technical Training &amp; Mentorship</h3>
+        <p>Beginner-friendly training and mentorship in embedded systems, IoT, and automation technologies.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS  — featured preview only
+       Full list lives at certifications.html
+       ============================================================ -->
+  <section class="certifications" id="certifications">
+    <div class="section-header">
+      <span class="section-tag">03 — Certifications</span>
+      <h2 class="section-title">Learning &amp; Credentials</h2>
+      <p class="section-intro">A selection of completed and in-progress certifications. View the full credentials page
+        for the complete list.</p>
+    </div>
+
+    <!-- Featured 4 certs (2 completed, 2 in-progress) -->
+    <div class="cert-grid cert-grid--featured">
+
+      <!-- FEATURED CERT 1 — AI & Automation (Completed) -->
+      <div class="cert-card">
+        <!-- REPLACE: swap src with actual certificate image path -->
+        <div class="cert-img-wrap">
+          <img src="images/certs/ai-automation-ts.png" alt="AI & Automation certificate" class="cert-img"
+            onerror="this.parentElement.classList.add('cert-img-placeholder')" />
+          <div class="cert-img-fallback"><i class='bx bx-award'></i></div>
         </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="portfolio" id="portfolio">
-        <div class="section-header">
-            <span class="section-tag">04 — Portfolio</span>
-            <h2 class="section-title">Selected Work</h2>
+        <div class="cert-body">
+          <div class="cert-meta">
+            <span class="cert-platform">TS Academy</span>
+            <span class="cert-year">2025 – 2026</span>
+          </div>
+          <h4 class="cert-title">AI &amp; Automation</h4>
+          <span class="cert-badge cert-badge--done">Completed</span>
         </div>
-        <div class="portfolio-grid">
-
-            <a href="https://drive.google.com/file/d/1PytLcAh1KJIAuz5PTKayel4-78fKvXIs/view?usp=sharing" target="_blank"
-                class="port-card">
-                <span class="port-num">01</span>
-                <div class="port-body">
-                    <h3>Academic Curriculum Vitae</h3>
-                    <p>Academic background, research endeavors, and professional experience in full detail.</p>
-                </div>
-                <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
-            </a>
-
-            <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz" target="_blank"
-                class="port-card">
-                <span class="port-num">02</span>
-                <div class="port-body">
-                    <h3>Professional Resume</h3>
-                    <p>A copy of my professional resume ready to download.</p>
-                </div>
-                <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
-            </a>
-
-            <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="port-card">
-                <span class="port-num">03</span>
-                <div class="port-body">
-                    <h3>Hardware Projects Repository</h3>
-                    <p>Collection of embedded systems, electronics, and AI automation projects.</p>
-                </div>
-                <span class="port-link">GitHub <i class='bx bx-arrow-back bx-rotate-180'></i></span>
-            </a>
-
-            <a href="https://drive.google.com/drive/folders/1QxUGZBhbAkXLrJyUnnnuO_PR1xV2LHN1" target="_blank"
-                class="port-card">
-                <span class="port-num">04</span>
-                <div class="port-body">
-                    <h3>AI Automation Demonstrations</h3>
-                    <p>Real-world automation systems showcasing AI workflows and API integrations.</p>
-                </div>
-                <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
-            </a>
-
-            <a href="https://medium.com/@adeniranprecious002" target="_blank" class="port-card">
-                <span class="port-num">05</span>
-                <div class="port-body">
-                    <h3>Blog Posts on IoT &amp; Embedded Systems</h3>
-                    <p>Articles on embedded systems, AI automation, and real-world engineering problem solving.</p>
-                </div>
-                <span class="port-link">Medium <i class='bx bx-arrow-back bx-rotate-180'></i></span>
-            </a>
-
-            <div class="port-card port-card--muted">
-                <span class="port-num">06</span>
-                <div class="port-body">
-                    <h3>Academic Publications</h3>
-                    <p>Research papers and technical publications in Embedded Systems and Electronics.</p>
-                </div>
-                <span class="port-link port-link--muted">Coming soon</span>
-            </div>
-
+        <div class="cert-actions">
+          <!-- REPLACE: update href with actual certificate URL -->
+          <a href="https://drive.google.com/file/d/1K_ZvQrRLmvHnvD3i9JeWAiZ28waPh4il/view?usp=sharing"
+            class="btn btn-ghost btn-sm" target="_blank">View Certificate →</a>
         </div>
-    </section>
+      </div>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <div class="section-header">
-            <span class="section-tag">05 — Contact</span>
-            <h2 class="section-title">Get In Touch</h2>
+      <!-- FEATURED CERT 2 — IT-Automation (In progress) -->
+      <div class="cert-card">
+        <!-- REPLACE: swap src with actual certificate image path -->
+        <div class="cert-img-wrap">
+          <img src="images/certs/IT-Automation-coursera.jpg" alt="Google IT Automation with Python Certificate"
+            class="cert-img" onerror="this.parentElement.classList.add('cert-img-placeholder')" />
+          <div class="cert-img-fallback"><i class='bx bx-award'></i></div>
         </div>
-        <div class="contact-grid">
-            <div class="contact-left">
-                <p class="contact-intro">Interested in collaborating, hiring, or discussing embedded systems and
-                    automation? I'm always open to meaningful conversations.</p>
-                <div class="contact-links">
-                    <a href="mailto:adeniranprecious002@gmail.com" class="contact-link">
-                        <i class='bx bx-envelope'></i>
-                        <span>adeniranprecious002@gmail.com</span>
-                    </a>
-                    <a href="https://linkedin.com/in/precious-adeniran-842b58294" target="_blank" class="contact-link">
-                        <i class='bx bxl-linkedin'></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="contact-link">
-                        <i class='bx bxl-github'></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </div>
-            <form class="contact-form" id="contact-form">
-                <div class="form-row">
-                    <input type="text" name="name" placeholder="Your name" required />
-                    <input type="email" name="email" placeholder="Your email" required />
-                </div>
-                <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                <div class="form-feedback" id="form-feedback"></div>
-            </form>
+        <div class="cert-body">
+          <div class="cert-meta">
+            <span class="cert-platform">Coursera</span>
+            <span class="cert-year">2025 – 2026</span>
+          </div>
+          <h4 class="cert-title">Google IT Automation with Python Certificate</h4>
+          <span class="cert-badge cert-badge--progress">In progress</span>
         </div>
-    </section>
+        <div class="cert-actions">
+          <span class="cert-actions-muted">Certificate pending</span>
+        </div>
+      </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-left">
-            <span class="footer-logo">APA<span class="logo-dot">.</span></span>
-            <span>Embedded Systems · AI Automation · IoT</span>
+      <!-- FEATURED CERT 3 — STM32 Bare-Metal (In Progress) -->
+      <div class="cert-card cert-card--progress">
+        <!-- REPLACE: swap src with actual certificate image path when earned -->
+        <div class="cert-img-wrap">
+          <img src="images/certs/stm32-baremetall-udemy.jpg" alt="Embedded Systems Bare-Metal STM32 certificate"
+            class="cert-img" onerror="this.parentElement.classList.add('cert-img-placeholder')" />
+          <div class="cert-img-fallback"><i class='bx bx-time'></i></div>
         </div>
-        <span class="footer-copy">© 2025 Adeniran Precious Adebayo</span>
-    </footer>
+        <div class="cert-body">
+          <div class="cert-meta">
+            <span class="cert-platform">Udemy</span>
+            <span class="cert-year">2025</span>
+          </div>
+          <h4 class="cert-title">Embedded Systems Bare-Metal Programming Ground Up™ (STM32)</h4>
+          <span class="cert-badge cert-badge--progress">In Progress</span>
+        </div>
+        <div class="cert-actions">
+          <span class="cert-actions-muted">Certificate pending</span>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- FEATURED CERT 4 — IBM Generative AI (In Progress) -->
+      <div class="cert-card cert-card--progress">
+        <!-- REPLACE: swap src with actual certificate image path when earned -->
+        <div class="cert-img-wrap">
+          <img src="images/certs/ibm-genai-coursera.jpg" alt="IBM Generative AI Engineering certificate"
+            class="cert-img" onerror="this.parentElement.classList.add('cert-img-placeholder')" />
+          <div class="cert-img-fallback"><i class='bx bx-time'></i></div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-meta">
+            <span class="cert-platform">Coursera — Skill-Bridge</span>
+            <span class="cert-year">2026</span>
+          </div>
+          <h4 class="cert-title">IBM Generative AI Engineering</h4>
+          <span class="cert-badge cert-badge--progress">In Progress</span>
+        </div>
+        <div class="cert-actions">
+          <span class="cert-actions-muted">Certificate pending</span>
+        </div>
+      </div>
+
+    </div><!-- /cert-grid featured -->
+
+    <!-- View More button -->
+    <div class="section-cta">
+      <a href="certifications.html" class="btn btn-ghost">
+        View All Certifications <i class='bx bx-right-arrow-alt'></i>
+      </a>
+      <span class="section-cta-note">10 total · 6 completed · 4 in progress</span>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       EMBEDDED SYSTEMS PROJECTS — featured preview
+       Full list lives at embedded-projects.html
+       ============================================================ -->
+  <section class="projects-section" id="embedded-projects">
+    <div class="section-header">
+      <span class="section-tag">04 — Embedded Systems Projects</span>
+      <h2 class="section-title">Hardware &amp; Firmware Work</h2>
+      <p class="section-intro">Engineering intelligent hardware systems focused on automation, monitoring, IoT, and
+        real-world problem solving.</p>
+    </div>
+
+    <div class="proj-grid proj-grid--featured">
+
+      <!-- PROJECT 1 — AI-Based Energy Monitoring System -->
+      <article class="proj-card">
+        <!-- REPLACE: swap src with actual project screenshot/image -->
+        <div class="proj-img-wrap">
+          <img src="images/embedded_projects/energy-monitor.png" alt="AI-Based Energy Monitoring System"
+            class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+          <div class="proj-img-fallback"><i class='bx bx-chip'></i></div>
+          <span class="proj-status-badge proj-status-badge--progress">In Progress</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">AI-Based Energy Monitoring System</h3>
+          <p class="proj-desc">Building a real-time power monitoring system using ESP32 and PZEM-004T sensors with
+            AI-driven anomaly detection and cloud analytics.</p>
+
+          <!-- Progress indicators (only shown when relevant) -->
+          <ul class="proj-progress-list">
+            <li><i class='bx bx-loader-alt'></i> Sensor integration under development</li>
+            <li><i class='bx bx-check'></i> Data logging working</li>
+            <li><i class='bx bx-check'></i> Dashboard completed</li>
+          </ul>
+
+          <div class="proj-stack">
+            <span class="stack-tag">ESP32</span>
+            <span class="stack-tag">InfluxDB</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">MQTT</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <!-- REPLACE: update href with actual GitHub repo URL -->
+          <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+          <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 — Smart Parking Slot Detection -->
+      <article class="proj-card">
+        <!-- REPLACE: swap src with actual project screenshot/image -->
+        <div class="proj-img-wrap">
+          <img src="images/embedded_projects/smart-parking.png" alt="Smart Parking Slot Detection System"
+            class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+          <div class="proj-img-fallback"><i class='bx bx-car'></i></div>
+          <span class="proj-status-badge proj-status-badge--done">Completed</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Smart Parking Slot Detection System</h3>
+          <p class="proj-desc">Designed an IR sensor-based parking detection system using Arduino Uno that reduced
+            manual parking monitoring and provided real-time slot availability.</p>
+          <div class="proj-stack">
+            <span class="stack-tag">Arduino Uno</span>
+            <span class="stack-tag">IR Sensors</span>
+            <span class="stack-tag">C++</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <!-- REPLACE: update href with actual GitHub repo URL -->
+          <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+          <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+        </div>
+      </article>
+
+      <!-- PROJECT 3 — IoT Health Monitoring System -->
+      <article class="proj-card">
+        <!-- REPLACE: swap src with actual project screenshot/image -->
+        <div class="proj-img-wrap">
+          <img src="images/embedded_projects/health-monitor.png" alt="IoT Health Monitoring System" class="proj-img"
+            onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+          <div class="proj-img-fallback"><i class='bx bx-heart-circle'></i></div>
+          <span class="proj-status-badge proj-status-badge--progress">In Progress</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">IoT Health Monitoring System</h3>
+          <p class="proj-desc">A connected health monitoring platform that captures vital signs from embedded sensors
+            and transmits data to the cloud for remote tracking and alerts.</p>
+          <!-- REPLACE: add tech stack tags as details become finalised -->
+          <div class="proj-stack">
+            <span class="stack-tag">IoT</span>
+            <span class="stack-tag">Cloud</span>
+            <span class="stack-tag">Sensors</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <!-- REPLACE: update href with actual GitHub repo URL -->
+          <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+        </div>
+      </article>
+
+
+    </div><!-- /proj-grid featured -->
+
+    <!-- View More button -->
+    <div class="section-cta">
+      <a href="embedded-projects.html" class="btn btn-ghost">
+        View All Embedded Projects <i class='bx bx-right-arrow-alt'></i>
+      </a>
+      <span class="section-cta-note">6 projects · ESP32, Arduino, STM32, IoT &amp; more</span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       AI AUTOMATION PROJECTS — featured preview
+       Full list lives at ai-projects.html
+       ============================================================ -->
+  <section class="projects-section projects-section--ai" id="ai-projects">
+    <div class="section-header">
+      <span class="section-tag">05 — AI Automation Projects</span>
+      <h2 class="section-title">NovaFlow AI Automation Work</h2>
+      <p class="section-intro">Designing intelligent AI-powered automation systems that reduce manual work, improve
+        operational efficiency, and create scalable business workflows.</p>
+    </div>
+
+    <div class="proj-grid proj-grid--featured">
+
+      <!-- ── AI PROJECT — GrowthPath AI Lead Generation & Qualification System ── -->
+      <article class="proj-card proj-card--featured reveal">
+        <!-- REPLACE: swap src with your actual project image -->
+        <!-- Example: src="images/projects/growthpath-system.jpg" -->
+        <div class="proj-img-wrap">
+          <img src="images/ai_automation_projects/growthpath-ai-system.png"
+            alt="GrowthPath AI Lead Generation & Qualification System" class="proj-img"
+            onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+
+          <div class="proj-img-fallback"><i class='bx bx-bot'></i></div>
+
+          <span class="proj-status-badge proj-status-badge--done">Completed</span>
+        </div>
+
+        <div class="proj-body">
+          <h3 class="proj-title">GrowthPath AI Lead Generation & Qualification System</h3>
+
+          <p class="proj-desc">
+            Designed and built a fully automated AI-powered lead qualification and customer management system for
+            GrowthPath
+            Digital Consulting to streamline lead intake, qualification, follow-up, and appointment scheduling for
+            high-volume
+            inbound leads.
+          </p>
+
+          <ul class="proj-features-list">
+            <li>AI chat agent for real-time lead qualification</li>
+            <li>Automated lead scoring (Hot / Warm / Cold)</li>
+            <li>CRM pipeline tracking with Airtable</li>
+            <li>Automated meeting booking with Google Calendar</li>
+            <li>Email nurture automation for lead follow-up</li>
+            <li>Slack/email alerts for high-value leads</li>
+          </ul>
+
+          <div class="proj-stack">
+            <span class="stack-tag">n8n</span>
+            <span class="stack-tag">OpenAI API</span>
+            <span class="stack-tag">Airtable</span>
+            <span class="stack-tag">Zapier</span>
+            <span class="stack-tag">Google Calendar</span>
+            <span class="stack-tag">AI Automation</span>
+          </div>
+        </div>
+
+        <div class="proj-actions">
+          <!-- REPLACE: update href with actual GitHub repo URL -->
+          <a href="https://github.com/adeniranprecious002-ux/growthpath-ai-lead-system" class="btn btn-ghost btn-sm"
+            target="_blank">
+            <i class='bx bxl-github'></i> GitHub
+          </a>
+
+          <!-- REPLACE: update href with actual demo URL -->
+          <a href="https://growthpath-consulting.lovable.app" class="btn btn-ghost btn-sm" target="_blank">
+            <i class='bx bx-link-external'></i> Demo
+          </a>
+
+          <!-- REPLACE: update href with actual case study URL -->
+          <a href="https://drive.google.com/file/d/1KpOp0TJMNo4y_HM2HiEGSBrIxWS7vsuP/view?usp=sharing"
+            class="btn btn-ghost btn-sm" target="_blank">
+            <i class='bx bx-book-content'></i> Case Study
+          </a>
+        </div>
+      </article>
+
+      <!-- FEATURED AI PROJECT 2 — PureSmile Dental Hospital -->
+      <article class="proj-card proj-card--featured">
+        <!-- REPLACE: swap src with actual project screenshot/image -->
+        <div class="proj-img-wrap">
+          <img src="images/ai_automation_projects/puresmile-dental.png" alt="PureSmile Dental Hospital Automation"
+            class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+          <div class="proj-img-fallback"><i class='bx bx-plus-medical'></i></div>
+          <span class="proj-status-badge proj-status-badge--done">Completed</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">PureSmile Dental Hospital — End-to-End Patient Automation</h3>
+          <p class="proj-desc">Complete automation system for patient onboarding, reminders, reactivation campaigns, and
+            operational alerts for a dental hospital.</p>
+          <ul class="proj-features-list">
+            <li>Automated welcome emails &amp; reminders</li>
+            <li>AI-powered patient reactivation</li>
+            <li>Error alert systems</li>
+          </ul>
+          <div class="proj-stack">
+            <span class="stack-tag">n8n Cloud</span>
+            <span class="stack-tag">OpenAI GPT-4o-mini</span>
+            <span class="stack-tag">Gmail API</span>
+            <span class="stack-tag">Google Sheets</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <!-- REPLACE: update href with actual GitHub repo URL -->
+          <a href="https://github.com/adeniranprecious002-ux/pure_smile" class="btn btn-ghost btn-sm" target="_blank"><i
+              class='bx bxl-github'></i> GitHub</a>
+          <!-- REPLACE: update href with actual live demo URL -->
+          <a href="https://drive.google.com/file/d/1hJsubY_HLneqtI-F2nkVsYyYcuPH2Fl6/view?usp=sharing"
+            class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+          <!-- REPLACE: update href with actual case study URL -->
+          <a href="https://drive.google.com/file/d/1HVuCzrQ_KnGwJMA98rSRSBP_0UpXlUhY/view?usp=sharing"
+            class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-book-content'></i> Case Study</a>
+        </div>
+      </article>
+
+      <!-- FEATURED AI PROJECT 3 — Cloud Arcade Automation System -->
+      <article class="proj-card proj-card--featured">
+        <!-- REPLACE: swap src with actual project screenshot/image -->
+        <div class="proj-img-wrap">
+          <img src="images/ai_automation_projects/cloud-arcade.png" alt="Cloud Arcade Automation System"
+            class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+          <div class="proj-img-fallback"><i class='bx bx-joystick'></i></div>
+          <span class="proj-status-badge proj-status-badge--done">Completed</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Cloud Arcade Automation System</h3>
+          <p class="proj-desc">Custom landing page and intelligent booking automation for a premium gaming lounge with
+            AI-assisted support and real-time admin alerts.</p>
+          <ul class="proj-features-list">
+            <li>Automated booking workflows</li>
+            <li>GPT-powered Telegram assistant</li>
+            <li>Auto confirmation emails</li>
+          </ul>
+          <div class="proj-stack">
+            <span class="stack-tag">n8n</span>
+            <span class="stack-tag">OpenAI GPT-4o-mini</span>
+            <span class="stack-tag">Telegram Bot</span>
+            <span class="stack-tag">Gmail API</span>
+            <span class="stack-tag">Netlify</span>
+          </div>
+        </div>
+        <div class="proj-actions">
+          <!-- REPLACE: update href with actual GitHub repo URL -->
+          <a href="https://github.com/adeniranprecious002-ux/cloud-arcade" class="btn btn-ghost btn-sm"
+            target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          <!-- REPLACE: update href with actual live demo URL -->
+          <a href="https://drive.google.com/file/d/1oatBlAPUxJN_o7LnQ9uSa6t4L4BgSk0J/view?usp=sharing"
+            class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+          <!-- REPLACE: update href with actual case study URL -->
+          <a href="https://drive.google.com/file/d/1QZp8s3e57oXxXsITdhWs3APqy0S7MKS1/view?usp=sharing"
+            class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-book-content'></i> Case Study</a>
+        </div>
+      </article>
+
+    </div><!-- /proj-grid featured -->
+
+    <!-- View More button -->
+    <div class="section-cta">
+      <a href="ai-projects.html" class="btn btn-ghost">
+        View All AI Automation Projects <i class='bx bx-right-arrow-alt'></i>
+      </a>
+      <span class="section-cta-note">6 projects · n8n, OpenAI, Voiceflow, Airtable &amp; more</span>
+    </div>
+
+  </section>
+
+  </section>
+
+  <!-- ============================================================
+       BLOG
+       ============================================================ -->
+  <section class="blog" id="blog">
+    <div class="section-header">
+      <span class="section-tag">06 — Blog</span>
+      <h2 class="section-title">Latest Writing</h2>
+    </div>
+    <div class="blog-featured">
+      <div class="blog-featured-meta">
+        <span class="blog-cat">Embedded Systems &amp; Automation</span>
+        <span class="blog-date">Featured Article</span>
+      </div>
+      <h2 class="blog-featured-title">How I Combine Embedded Systems with Automation to Build Smarter Solutions</h2>
+      <p class="blog-featured-excerpt">
+        Every system I build starts at the embedded level — selecting the right microcontroller, writing efficient
+        firmware, and managing timing, power, and reliability. Once that layer is solid, connectivity and automation
+        follow. AI enters last, only where it genuinely adds value.
+      </p>
+      <blockquote class="blog-quote">Hardware first. Systems next. Intelligence last.</blockquote>
+      <a href="https://medium.com/@adeniranprecious002" target="_blank" class="btn btn-primary">Read on Medium →</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO
+       ============================================================ -->
+  <section class="portfolio" id="portfolio">
+    <div class="section-header">
+      <span class="section-tag">07 — Portfolio</span>
+      <h2 class="section-title">Documents &amp; Resources</h2>
+    </div>
+    <div class="portfolio-grid">
+
+      <a href="https://drive.google.com/drive/folders/1THI7vRfdokV1b9bIznCTzbc6G9oi2zVI" target="_blank"
+        class="port-card">
+        <span class="port-num">01</span>
+        <div class="port-body">
+          <h3>Academic Curriculum Vitae</h3>
+          <p>Academic background, research endeavors, and professional experience in full detail.</p>
+        </div>
+        <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1sVSy59un6tVeD3u4aBwBXXw-c1XxGJBz" target="_blank"
+        class="port-card">
+        <span class="port-num">02</span>
+        <div class="port-body">
+          <h3>Professional Resume</h3>
+          <p>A copy of my professional resume ready to download.</p>
+        </div>
+        <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+      </a>
+
+      <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="port-card">
+        <span class="port-num">03</span>
+        <div class="port-body">
+          <h3>Hardware Projects Repository</h3>
+          <p>Collection of embedded systems, electronics, and AI automation projects.</p>
+        </div>
+        <span class="port-link">GitHub <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1QxUGZBhbAkXLrJyUnnnuO_PR1xV2LHN1" target="_blank"
+        class="port-card">
+        <span class="port-num">04</span>
+        <div class="port-body">
+          <h3>AI Automation Demonstrations</h3>
+          <p>Real-world automation systems showcasing AI workflows and API integrations.</p>
+        </div>
+        <span class="port-link">Google Drive <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+      </a>
+
+      <a href="https://medium.com/@adeniranprecious002" target="_blank" class="port-card">
+        <span class="port-num">05</span>
+        <div class="port-body">
+          <h3>Blog Posts on IoT &amp; Embedded Systems</h3>
+          <p>Articles on embedded systems, AI automation, and real-world engineering problem solving.</p>
+        </div>
+        <span class="port-link">Medium <i class='bx bx-arrow-back bx-rotate-180'></i></span>
+      </a>
+
+      <div class="port-card port-card--muted">
+        <span class="port-num">06</span>
+        <div class="port-body">
+          <h3>Academic Publications</h3>
+          <p>Research papers and technical publications in Embedded Systems and Electronics.</p>
+        </div>
+        <span class="port-link port-link--muted">Coming soon</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-tag">08 — Contact</span>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <p class="contact-intro">Interested in collaborating, hiring, or discussing embedded systems and automation? I'm
+          always open to meaningful conversations.</p>
+        <div class="contact-links">
+          <a href="mailto:adeniranprecious002@gmail.com" class="contact-link">
+            <i class='bx bx-envelope'></i>
+            <span>adeniranprecious002@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/precious-adeniran-842b58294" target="_blank" class="contact-link">
+            <i class='bx bxl-linkedin'></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/adeniranprecious002-ux" target="_blank" class="contact-link">
+            <i class='bx bxl-github'></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://upwork.com/freelancers/~01721e743c53bddd4e" target="_blank" class="contact-link">
+            <i class='bx bxl-upwork'></i>
+            <span>Upwork</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <div class="form-feedback" id="form-feedback"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-logo">APA<span class="logo-dot">.</span></span>
+      <span>Embedded Systems · AI Automation · IoT</span>
+    </div>
+    <span class="footer-copy">© 2025 Adeniran Precious Adebayo</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
