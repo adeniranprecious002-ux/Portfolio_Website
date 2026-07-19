@@ -99,6 +99,16 @@ document.querySelectorAll('.reveal').forEach((el, i) => {
   revealObserver.observe(el);
 });
 
+// Check visibility after a short delay to ensure layout is ready
+window.addEventListener('load', () => {
+  document.querySelectorAll('.reveal:not(.visible)').forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('visible');
+    }
+  });
+});
+
 // ================================================
 // 4. TYPED TEXT EFFECT (index.html only)
 // ================================================

@@ -72,15 +72,13 @@
           <!-- REPLACE: insert your profile photo below -->
           <!-- Remove the placeholder div and uncomment:-->
           <div class="page-hero-photo">
-            <img src="images/NOVAFLOW_AI.HEIC" alt="Adeniran Precious Adebayo" />
-            class="page-hero-photo page-hero-photo--empty" data-label="Your photo here&#10;Replace in HTML">
+            <img src="images/NOVAFLOW_AI.HEIC" alt="Adeniran Precious Adebayo" class="page-hero-photo" />
           </div>
 
           <!-- REPLACE: insert a NovaFlow AI branding image/banner below -->
           <!-- Remove the placeholder div and uncomment:-->
           <div class="page-hero-banner">
-            <img src="images/novaflow-banner.png" alt="NovaFlow AI" />
-            class="page-hero-banner" data-label="NovaFlow AI&#10;Branding image">
+            <img src="images/novaflow-banner.png" alt="NovaFlow AI" class="page-hero-banner" />
           </div>
         </div>
       </div>
@@ -381,7 +379,7 @@
           </div>
         </article>
 
-        <article class="proj-card">
+        <article class="proj-card reveal">
           <div class="proj-img-wrap">
             <img src="images/ai_automation_projects/wulf_noir.png" alt="WULF NOIR — Grant Proposal Automation"
               class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
@@ -427,6 +425,67 @@
           </div>
         </article>
 
+        <!-- ── AI PROJECT 8 — LunaPay RAG-Powered AI Customer Support Agent ── -->
+         <article class="proj-card proj-card--featured reveal">
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/lunapay-support.png"
+            alt="LunaPay — RAG-Powered AI Customer Support Agent"
+            class="proj-img"
+            onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-bot'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">LunaPay — RAG-Powered AI Customer Support Agent</h3>
+            <p class="proj-desc">
+              Built a production-grade AI customer support agent for a fictional fintech
+              payment platform using Retrieval-Augmented Generation (RAG). LunaAI answers
+              customer questions strictly from LunaPay's official documentation —
+              returning grounded answers with source citations in under 2 seconds,
+              across three automated n8n workflows with no custom backend server required.
+            </p>
+            <ul class="proj-features-list">
+              <li>RAG pipeline — 6 docs chunked, embedded &amp; stored in Pinecone</li>
+              <li>AI Agent with GPT-4o-mini and per-session conversation memory</li>
+              <li>Source citations on every response via Sources panel in the UI</li>
+              <li>3 n8n workflows: ingestion, live chat API, and feedback logging</li>
+              <li>Google Sheets feedback log + Slack Block Kit alerts for negative feedback</li>
+              <li>Full SaaS frontend — 8 dashboard pages, API playground, Clerk auth</li>
+              <li>Weekly automated knowledge base refresh from Google Drive</li>
+              <li>Under $0.002 per customer interaction in API costs</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI GPT-4o-mini</span>
+              <span class="stack-tag">Pinecone</span>
+              <span class="stack-tag">RAG</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Clerk Auth</span>
+              <span class="stack-tag">Google Drive</span>
+              <span class="stack-tag">Google Sheets</span>
+              <span class="stack-tag">Slack API</span>
+              <span class="stack-tag">Lovable</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/adeniranprecious002-ux/lunapay-ai-support"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="#"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+            <a href="#"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-pencil'></i> Article
+            </a>
+            <a href="#"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-book-content'></i> Case Study
+            </a>
+         </div>
+        </article>
 
       </div><!-- /proj-grid -->
 
@@ -449,6 +508,7 @@
     <span class="footer-copy">© 2025 Adeniran Precious Adebayo</span>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 
