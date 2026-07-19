@@ -3,6 +3,10 @@
 //  Works on index.html AND all sub-pages
 // ================================================
 
+emailjs.init({
+    publicKey: "mxQNZv39wc0Bm8IQe",
+});
+
 // ---- SELECTORS (null-safe) ----
 const header      = document.getElementById('header');
 const menuBtn     = document.getElementById('menu-btn');
@@ -119,41 +123,61 @@ if (typedEl) {
 }
 
 // ================================================
-// 5. CONTACT FORM — n8n WEBHOOK (index.html only)
+// 5. CONTACT FORM — EmailJS
 // ================================================
 
-// Replace with your actual n8n webhook URL
-const N8N_WEBHOOK = 'YOUR_N8N_WEBHOOK_URL_HERE';
-
 const showFeedback = (msg, type) => {
-  if (!feedback) return; // null-safe: no feedback el on sub-pages
+  if (!feedback) return;
+
   feedback.textContent = msg;
   feedback.className = `form-feedback ${type}`;
-  setTimeout(() => { feedback.textContent = ''; feedback.className = 'form-feedback'; }, 6000);
+
+  setTimeout(() => {
+    feedback.textContent = "";
+    feedback.className = "form-feedback";
+  }, 6000);
 };
 
 if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
+  contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const btn     = contactForm.querySelector('button[type="submit"]');
-    const name    = contactForm.name.value.trim();
-    const email   = contactForm.email.value.trim();
+
+    const btn = contactForm.querySelector('button[type="submit"]');
+
+    const name = contactForm.name.value.trim();
+    const email = contactForm.email.value.trim();
     const message = contactForm.message.value.trim();
-    if (!name || !email || !message) { showFeedback('Please fill in all fields.', 'error'); return; }
-    if (N8N_WEBHOOK === 'YOUR_N8N_WEBHOOK_URL_HERE') {
-      showFeedback('Contact form not yet configured. Please email me directly.', 'error'); return;
+
+    if (!name || !email || !message) {
+      showFeedback("Please fill in all fields.", "error");
+      return;
     }
-    const origText = btn.textContent;
-    btn.textContent = 'Sending…'; btn.disabled = true;
+
+    const originalText = btn.textContent;
+    btn.textContent = "Sending...";
+    btn.disabled = true;
+
     try {
-      const res = await fetch(N8N_WEBHOOK, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message }),
-      });
-      if (res.ok) { showFeedback("Message sent! I'll get back to you soon.", 'success'); contactForm.reset(); }
-      else throw new Error('Server error');
-    } catch { showFeedback('Something went wrong. Please email me directly.', 'error'); }
-    finally { btn.textContent = origText; btn.disabled = false; }
+
+      await emailjs.send(
+        "service_4t51ldi",
+        "template_vccmxga",
+        {
+          name: name,
+          email: email,
+          message: message,
+        }
+      );
+
+      showFeedback("Message sent! I'll get back to you soon.", "success");
+      contactForm.reset();
+
+    } catch (error) {
+      console.error(error);
+      showFeedback("Failed to send message. Please try again.", "error");
+    }
+
+    btn.textContent = originalText;
+    btn.disabled = false;
   });
 }

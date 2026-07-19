@@ -568,6 +568,136 @@ img {
 }
 
 /* ================================
+   EDUCATION
+================================ */
+.education {
+  padding: 7rem 5%;
+  border-top: 1px solid var(--border);
+}
+
+.edu-timeline {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.edu-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  left: 27px;
+  width: 1px;
+  background: var(--border2);
+}
+
+.edu-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.edu-marker {
+  position: relative;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-marker-icon {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.edu-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.edu-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+}
+
+.edu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.edu-period {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text3);
+  letter-spacing: 0.04em;
+}
+
+.edu-degree {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+.edu-school {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.8rem;
+}
+
+.edu-highlight {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .edu-item {
+    grid-template-columns: 44px 1fr;
+    gap: 1rem;
+  }
+
+  .edu-marker {
+    width: 44px;
+    height: 44px;
+  }
+
+  .edu-marker-icon {
+    font-size: 1.1rem;
+  }
+
+  .edu-timeline::before {
+    left: 21px;
+  }
+
+  .edu-card {
+    padding: 1.25rem;
+  }
+}
+
+/* ================================
    SERVICES
 ================================ */
 .services {
