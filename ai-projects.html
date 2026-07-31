@@ -488,6 +488,53 @@
          </div>
         </article>
 
+        <!-- ── AI PROJECT — QA-Agent ── -->
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/qa-agent.png" alt="QA-Agent" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-shield-quarter'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Live</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">QA-Agent — AI Regression &amp; Calculation Guard</h3>
+            <p class="proj-desc">
+              An autonomous QA pipeline that goes beyond UI regression testing into calculation
+              validation — it independently recomputes expected values from raw input data, compares
+              them against live API output, and when a mismatch is found, uses an LLM to explain the
+              likely root cause and suggest a follow-up test instead of firing a generic threshold alert.
+              Runs on a schedule with full observability into a live dashboard.
+            </p>
+            <ul class="proj-features-list">
+              <li>Independent recalculation — not a threshold ping, true calculation validation</li>
+              <li>AI-generated root-cause analysis on every anomaly (formula drift, rounding, stale cache)</li>
+              <li>Severity tiers (none / medium / high) with Slack alerting</li>
+              <li>Every check logged to Supabase with DB-level duplicate prevention</li>
+              <li>Live dashboard — pass rate, anomaly history, likely cause</li>
+              <li>Isolated error-handling workflow separate from anomaly detection</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI GPT-4o</span>
+              <span class="stack-tag">Supabase</span>
+              <span class="stack-tag">Render</span>
+              <span class="stack-tag">Slack API</span>
+              <span class="stack-tag">Express</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/adeniranprecious002-ux/qa-agent-mock-api" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bxl-github'></i> Repo
+            </a>
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-book-content'></i> Case Study
+            </a>
+          </div>
+        </article>
+
       </div><!-- /proj-grid -->
 
       <!-- Back link -->
@@ -496,6 +543,7 @@
           <i class='bx bx-left-arrow-alt'></i> Back to Portfolio
         </a>
       </div>
+
 
     </div><!-- /page-content -->
   </div><!-- /page-wrap -->
