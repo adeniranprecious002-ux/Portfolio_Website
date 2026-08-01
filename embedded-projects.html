@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embedded Systems Projects — Adeniran Precious Adebayo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header scrolled" id="header">
+    <a href="index.html#home" class="logo">APA<span class="logo-dot">.</span></a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#services">Services</a>
+      <a href="certifications.html">Certs</a>
+      <a href="embedded-projects.html" class="active">Embedded</a>
+      <a href="ai-projects.html">AI</a>
+      <a href="index.html#blog">Blog</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- ============================================================
+         PAGE HERO
+         ============================================================ -->
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-left">
+          <div class="page-hero-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Embedded Systems Projects</span>
+          </div>
+          <h1 class="page-hero-title">Embedded<br><em>Systems</em> Projects</h1>
+          <p class="page-hero-desc">Engineering intelligent hardware systems focused on automation, monitoring, IoT, and
+            real-world problem solving. From bare-metal firmware to connected cloud dashboards.</p>
+          <div class="page-hero-stats">
+            <div class="page-hero-stat">
+              <span class="page-hero-stat-num">9</span>
+              <span class="page-hero-stat-label">Projects</span>
+            </div>
+            <div class="page-hero-stat">
+              <span class="page-hero-stat-num">7</span>
+              <span class="page-hero-stat-label">Completed</span>
+            </div>
+            <div class="page-hero-stat">
+              <span class="page-hero-stat-num">2</span>
+              <span class="page-hero-stat-label">In Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-hero-visual">
+          <!-- REPLACE: insert your profile/lab photo below -->
+          <!-- Remove the empty placeholder div and uncomment the img block:-->
+          <div class="page-hero-photo">
+            <img src="images/professional_headshot_embedded.jpg" alt="Adeniran Precious Adebayo" />
+            class="page-hero-photo page-hero-photo--empty" data-label="Your photo here&#10;Replace in HTML">
+          </div>
+
+          <!-- REPLACE: optionally add a lab/workshop image below -->
+          <!-- Remove the empty placeholder div and uncomment the img block:-->
+          <div class="page-hero-banner">
+            <img src="images/lab-workspace.png" alt="Lab workspace" />
+            class="page-hero-banner page-hero-banner--empty" data-label="Optional lab image">
+          </div>
+        </div>
+      </div>
+    </div><!-- /page-hero -->
+
+    <!-- ============================================================
+         ALL EMBEDDED PROJECTS
+         ============================================================ -->
+    <div class="page-content">
+
+      <div class="proj-grid">
+
+        <!-- ── PROJECT 1 — AI-Based Energy Monitoring System ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/energy-monitor.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/energy-monitor.png" alt="AI-Based Energy Monitoring System"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-chip'></i></div>
+            <span class="proj-status-badge proj-status-badge--progress">In Progress</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">AI-Based Energy Monitoring System</h3>
+            <p class="proj-desc">Building a real-time power monitoring system using ESP32 and PZEM-004T sensors with
+              AI-driven anomaly detection and cloud analytics. The system aims to surface power irregularities
+              automatically and send alerts.</p>
+            <ul class="proj-progress-list">
+              <li><i class='bx bx-loader-alt'></i> Sensor integration under development</li>
+              <li><i class='bx bx-check'></i> Data logging working</li>
+              <li><i class='bx bx-check'></i> Dashboard completed</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">ESP32</span>
+              <span class="stack-tag">PZEM-004T</span>
+              <span class="stack-tag">InfluxDB</span>
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">MQTT</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+            <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 2 — Smart Parking Slot Detection ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/smart-parking.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/smart-parking.png" alt="Smart Parking Slot Detection System"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-car'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Smart Parking Slot Detection System</h3>
+            <p class="proj-desc">Designed an IR sensor-based parking detection system using Arduino Uno that reduced
+              manual parking monitoring and provided real-time slot availability to users and operators.</p>
+            <div class="proj-stack">
+              <span class="stack-tag">Arduino Uno</span>
+              <span class="stack-tag">IR Sensors</span>
+              <span class="stack-tag">C++</span>
+              <span class="stack-tag">LCD Display</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+            <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 3 — IoT Health Monitoring System ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/health-monitor.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/health-monitor.png" alt="IoT Health Monitoring System" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-heart-circle'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">IoT Health Monitoring System</h3>
+            <p class="proj-desc">A connected health monitoring platform that captures vital signs from embedded sensors
+              and transmits data to the cloud for remote tracking, visualisation, and alerts.</p>
+            <!-- REPLACE: add more detail and tech stack as project develops -->
+            <div class="proj-stack">
+              <span class="stack-tag">IoT</span>
+              <span class="stack-tag">Cloud</span>
+              <span class="stack-tag">Biometric Sensors</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 4 — Nanomaterial Gas Leakage Detection ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/gas-detection.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/gas-detection.png" alt="Nanomaterial-Based Gas Leakage Detection"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-shield-quarter'></i></div>
+            <span class="proj-status-badge proj-status-badge--progress">In Progress</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Nanomaterial-Based Gas Leakage Detection System with IoT Monitoring</h3>
+            <p class="proj-desc">Design and implementation of a smart gas leakage detection system integrating
+              nanomaterial-based sensors with IoT monitoring for real-time alerts and safety monitoring.</p>
+            <div class="proj-stack">
+              <span class="stack-tag">IoT</span>
+              <span class="stack-tag">Nanomaterial Sensors</span>
+              <span class="stack-tag">Safety Systems</span>
+              <span class="stack-tag">Real-time Alerts</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 5 — LED Matrix Web Scroller ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/led-matrix.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/led-matrix.png" alt="LED Matrix Web Scroller" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-broadcast'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">LED Matrix Web Scroller</h3>
+            <p class="proj-desc">Built an ESP32-powered scrolling LED matrix display controlled through a web interface,
+              enabling real-time message updates from any browser over Wi-Fi without reflashing firmware.</p>
+            <div class="proj-stack">
+              <span class="stack-tag">ESP32</span>
+              <span class="stack-tag">LED Matrix</span>
+              <span class="stack-tag">Web Interface</span>
+              <span class="stack-tag">C++</span>
+              <span class="stack-tag">Wi-Fi</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/ESP8266-LED-Matrix-Web-Scroller"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+            <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+          </div>
+        </article>
+
+
+        <!-- ── PROJECT 6— Automatic Fan Controller using PIR Sensor ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/automatic-fan-controller.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/automatic-fan-controller.jpg"
+              alt="Automatic Fan Controller using PIR Sensor" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-wind'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">Automatic Fan Controller using PIR Sensor</h3>
+
+            <p class="proj-desc">
+              Designed and built an automatic fan control system using a PIR motion sensor to detect human presence and
+              automatically switch the fan on or off, improving energy efficiency and reducing unnecessary power
+              consumption.
+            </p>
+
+            <div class="proj-stack">
+              <span class="stack-tag">Arduino</span>
+              <span class="stack-tag">PIR Sensor</span>
+              <span class="stack-tag">Relay Module</span>
+              <span class="stack-tag">Embedded Systems</span>
+              <span class="stack-tag">Automation</span>
+            </div>
+          </div>
+
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/automatic-fan-controller" class="btn btn-ghost btn-sm"
+              target="_blank">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+
+            <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 7— Solar-Powered Automatic Irrigation System ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/solar-irrigation-system.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/solar-irrigation-system.jpg"
+              alt="Solar-Powered Automatic Irrigation System" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-sun'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">Solar-Powered Automatic Irrigation System</h3>
+
+            <p class="proj-desc">
+              Contributed to the development of a solar-powered automatic irrigation system using Arduino and soil
+              moisture
+              sensing to automate water distribution for farms, reducing water pump energy consumption by 25% during
+              test
+              conditions.
+            </p>
+
+            <div class="proj-stack">
+              <span class="stack-tag">Arduino</span>
+              <span class="stack-tag">Solar Energy</span>
+              <span class="stack-tag">Soil Moisture Sensor</span>
+              <span class="stack-tag">Automation</span>
+              <span class="stack-tag">Embedded Systems</span>
+            </div>
+          </div>
+
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/automatic-irrigation-system" class="btn btn-ghost btn-sm"
+              target="_blank">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+
+            <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 8 — Density and Sound-Based Traffic Light System ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/traffic-light-system.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/adaptive-traffic-light-system.png"
+              alt="Density and Sound-Based Traffic Light System" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-traffic-cone'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">Density and Sound-Based Traffic Light System</h3>
+
+            <p class="proj-desc">
+              Designed an adaptive traffic light control system using sensor fusion techniques that combined vehicle
+              density
+              detection and sound sensing to dynamically manage traffic flow and improve road efficiency in high-traffic
+              conditions.
+            </p>
+
+            <div class="proj-stack">
+              <span class="stack-tag">Arduino</span>
+              <span class="stack-tag">Sensor Fusion</span>
+              <span class="stack-tag">Traffic Automation</span>
+              <span class="stack-tag">Embedded Systems</span>
+              <span class="stack-tag">Sound Sensors</span>
+            </div>
+          </div>
+
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/Density-and-Sound-Based-Traffic-light"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+
+            <!-- REPLACE: update href with actual live demo URL, or remove if none -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 9 — Undergraduate Thesis ── -->
+        <article class="proj-card proj-card--thesis reveal">
+          <!-- REPLACE: swap src with your thesis cover image or project photo -->
+          <!-- Example: src="images/projects/thesis.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/embedded_projects/thesis.jpg" alt="Undergraduate Thesis" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-book-open'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-thesis-label">Undergraduate Thesis</div>
+            <h3 class="proj-title">Implementation of a Speed Measurement System for Road Safety Personnel using Arduino
+              Microcontroller</h3>
+            <p class="proj-desc">Final year research project designing a portable, low-cost speed measurement solution
+              to support road safety enforcement. Built on an Arduino microcontroller with a radar sensor module and a
+              real-time display unit for field officers.</p>
+            <div class="proj-stack">
+              <span class="stack-tag">Arduino</span>
+              <span class="stack-tag">Radar Sensor</span>
+              <span class="stack-tag">C++</span>
+              <span class="stack-tag">Research</span>
+              <span class="stack-tag">Road Safety</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with your actual thesis PDF or Google Drive link -->
+            <a href="https://drive.google.com/file/d/1LQ-1_BVUVIvaqwbcJWs2ATUYIyDYn5df/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-file-blank'></i> View Thesis</a>
+            <!-- REPLACE: update href with actual GitHub repo URL, or remove if no code -->
+            <a href="https://github.com/adeniranprecious002-ux/SPEED_MEASUREMENT_SYSTEM_FOR_ROAD_SAFETY_PERSONNEL"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          </div>
+        </article>
+
+      </div><!-- /proj-grid -->
+
+      <!-- Back link -->
+      <div style="margin-top: 4rem;">
+        <a href="index.html#embedded-projects" class="page-back">
+          <i class='bx bx-left-arrow-alt'></i> Back to Portfolio
+        </a>
+      </div>
+
+    </div><!-- /page-content -->
+  </div><!-- /page-wrap -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-logo">APA<span class="logo-dot">.</span></span>
+      <span>Embedded Systems · AI Automation · IoT</span>
+    </div>
+    <span class="footer-copy">© 2025 Adeniran Precious Adebayo</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

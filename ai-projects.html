@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaFlow AI Automation — Adeniran Precious Adebayo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header scrolled" id="header">
+    <a href="index.html#home" class="logo">APA<span class="logo-dot">.</span></a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#services">Services</a>
+      <a href="certifications.html">Certs</a>
+      <a href="embedded-projects.html">Embedded</a>
+      <a href="ai-projects.html" class="active">AI</a>
+      <a href="index.html#blog">Blog</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="page-wrap">
+
+    <!-- ============================================================
+         PAGE HERO
+         ============================================================ -->
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-left">
+          <div class="page-hero-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>AI Automation Projects</span>
+          </div>
+          <h1 class="page-hero-title">NovaFlow<br><em>AI Automation</em> Work</h1>
+          <p class="page-hero-desc">Designing intelligent AI-powered automation systems that reduce manual work, improve
+            operational efficiency, and create scalable business workflows.</p>
+          <div class="page-hero-stats">
+            <div class="page-hero-stat">
+              <span class="page-hero-stat-num">9</span>
+              <span class="page-hero-stat-label">Projects</span>
+            </div>
+            <div class="page-hero-stat">
+              <span class="page-hero-stat-num">7</span>
+              <span class="page-hero-stat-label">Completed</span>
+            </div>
+            <div class="page-hero-stat">
+              <span class="page-hero-stat-num">2</span>
+              <span class="page-hero-stat-label">In Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-hero-visual">
+          <!-- REPLACE: insert your profile photo below -->
+          <!-- Remove the placeholder div and uncomment:-->
+          <div class="page-hero-photo">
+            <img src="images/NOVAFLOW_AI.HEIC" alt="Adeniran Precious Adebayo" class="page-hero-photo" />
+          </div>
+
+          <!-- REPLACE: insert a NovaFlow AI branding image/banner below -->
+          <!-- Remove the placeholder div and uncomment:-->
+          <div class="page-hero-banner">
+            <img src="images/novaflow-banner.png" alt="NovaFlow AI" class="page-hero-banner" />
+          </div>
+        </div>
+      </div>
+    </div><!-- /page-hero -->
+
+    <!-- ============================================================
+    ALL AI AUTOMATION PROJECTS
+    ============================================================ -->
+    <div class="page-content">
+
+      <div class="proj-grid">
+
+        <!-- ── AI PROJECT 1 — AI Powered Resume Screener ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/resume-screener.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/resume-screener.png" alt="AI Powered Resume Screener"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-file-find'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">AI Powered Resume Screener</h3>
+            <p class="proj-desc">Built an AI-powered resume screening system that automates candidate evaluation, ranks
+              applicants against job criteria,
+              and generates structured shortlist reports — screening multiple candidates in under 60 seconds. The system
+              analyzes
+              resumes, assigns scores (0-100), highlights strengths, weaknesses, skill gaps, and red flags, and
+              automatically logs
+              results for recruiter review, significantly reducing manual screening time.</p>
+            <!-- REPLACE: add features list once available -->
+
+            <ul class="proj-features-list">
+              <li>Multi-resume upload and batch screening</li>
+              <li>AI scoring system (0-100 ranking)</li>
+              <li>Strengths, weaknesses & skill gap analysis</li>
+              <li>Automated candidate ranking</li>
+              <li>Results logging to Google Sheets</li>
+              <li>Authentication & rate-limited API access</li>
+            </ul>
+
+            <div class="proj-stack">
+              <span class="stack-tag">OpenAI API</span>
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Tailwind CSS</span>
+              <span class="stack-tag">Google Sheets</span>
+              <span class="stack-tag">Clerk Auth</span>
+              <span class="stack-tag">Python</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/hireiq-automation" class="btn btn-ghost btn-sm"
+              target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+            <!-- REPLACE: update href with actual live demo URL -->
+            <a href="https://drive.google.com/file/d/1mBRAPUm2KkzDYDx8xI-i5hAX8q76IM7J/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+            <a href="https://medium.com/@adeniranprecious002/how-i-built-an-ai-powered-resume-screener-using-n8n-and-gpt-4o-b10970a32a65?sharedUserId=adeniranprecious002"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-pencil'></i> Article
+            </a>
+            <!-- REPLACE: update href with actual case study URL -->
+            <a href="https://drive.google.com/file/d/19tEE-OGEHszU1WOmFVcHoD2dXwWNFJ_c/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-book-content'></i> Case
+              Study</a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT 2 — Finance Bot ── -->
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/finance-bot.png" alt="Finance Bot" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-dollar-circle'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">FinanceBot</h3>
+            <p class="proj-desc">
+              A full-stack AI-powered personal finance SaaS that ingests bank statement CSVs,
+              auto-categorises every transaction using GPT-4o-mini, and surfaces spending patterns
+              through an interactive dashboard — complete with multi-month trend charts, per-user
+              data isolation, duplicate upload prevention, and automated monthly email reports.
+            </p>
+            <ul class="proj-features-list">
+              <li>AI transaction categorisation (8 categories)</li>
+              <li>Multi-user SaaS with JWT authentication</li>
+              <li>Interactive dashboard — KPIs, donut chart, trend chart</li>
+              <li>Automated monthly email reports via Gmail</li>
+              <li> Duplicate upload prevention via DB constraints</li>
+              <li>Per-user Row Level Security (Supabase RLS)</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">Lovable</span>
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI GPT-4o</span>
+              <span class="stack-tag">Supabase</span>
+              <span class="stack-tag">Clerk Auth</span>
+              <span class="stack-tag">Render</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Recharts</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-lock-alt'></i> Private Repo
+            </a>
+            <a href="https://drive.google.com/file/d/1UGcOV_Zv1PXtIOhxj3_qDpV3SmotzSHh/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+            <a href="https://drive.google.com/file/d/14XQOcNx-XhE5JkXo1TDWAyazs9Ff9h3H/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-book-content'></i> Case Study
+            </a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT — GrowthPath AI Lead Generation & Qualification System ── -->
+        <article class="proj-card proj-card--featured reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/projects/growthpath-system.jpg" -->
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/growthpath-ai-system.png"
+              alt="GrowthPath AI Lead Generation & Qualification System" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+
+            <div class="proj-img-fallback"><i class='bx bx-bot'></i></div>
+
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">GrowthPath AI Lead Generation & Qualification System</h3>
+
+            <p class="proj-desc">
+              Designed and built a fully automated AI-powered lead qualification and customer management system for
+              GrowthPath
+              Digital Consulting to streamline lead intake, qualification, follow-up, and appointment scheduling for
+              high-volume
+              inbound leads.
+            </p>
+
+            <ul class="proj-features-list">
+              <li>AI chat agent for real-time lead qualification</li>
+              <li>Automated lead scoring (Hot / Warm / Cold)</li>
+              <li>CRM pipeline tracking with Airtable</li>
+              <li>Automated meeting booking with Google Calendar</li>
+              <li>Email nurture automation for lead follow-up</li>
+              <li>Slack/email alerts for high-value leads</li>
+            </ul>
+
+            <div class="proj-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI API</span>
+              <span class="stack-tag">Airtable</span>
+              <span class="stack-tag">Zapier</span>
+              <span class="stack-tag">Google Calendar</span>
+              <span class="stack-tag">AI Automation</span>
+            </div>
+          </div>
+
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/growthpath-ai-lead-system" class="btn btn-ghost btn-sm"
+              target="_blank">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+
+            <!-- REPLACE: update href with actual demo URL -->
+            <a href="https://growthpath-consulting.lovable.app" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+            <a href="https://medium.com/@adeniranprecious002/from-chaos-to-conversion-how-i-built-an-ai-powered-lead-system-for-a-real-client-a3406e5223f3?sharedUserId=adeniranprecious002"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-pencil'></i> Article
+            </a>
+
+            <!-- REPLACE: update href with actual case study URL -->
+            <a href="https://drive.google.com/file/d/1KpOp0TJMNo4y_HM2HiEGSBrIxWS7vsuP/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-book-content'></i> Case Study
+            </a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT 4 — Contact Form Backend with AI Auto-Reply ── -->
+        <article class="proj-card reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/ai_automation_projects/contact-form-ai.png" -->
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/contact-form-ai.png" alt="Contact Form Backend with AI Auto-Reply"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-envelope-open'></i></div>
+            <span class="proj-status-badge proj-status-badge--progress">In Progress</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Contact Form Backend with AI Auto-Reply</h3>
+            <p class="proj-desc">Building a smart contact form backend using n8n webhook automation, AI-powered
+              knowledge matching, and Gmail auto-response workflows that send contextually relevant replies
+              immediately.
+            </p>
+            <div class="proj-stack">
+              <span class="stack-tag">n8n Cloud</span>
+              <span class="stack-tag">OpenAI API</span>
+              <span class="stack-tag">Gmail</span>
+              <span class="stack-tag">Webhook</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT 5 — PureSmile Dental Hospital ── -->
+        <article class="proj-card proj-card--featured reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/ai_automation_projects/puresmile-dental.png" -->
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/puresmile-dental.png" alt="PureSmile Dental Hospital Automation"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-plus-medical'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">PureSmile Dental Hospital — End-to-End Patient Automation System</h3>
+            <p class="proj-desc">Built a complete automation system for patient onboarding, reminders, reactivation
+              campaigns, and operational alerts for a dental hospital. Reduced manual admin work and improved
+              patient
+              retention.</p>
+            <ul class="proj-features-list">
+              <li>Automated welcome emails</li>
+              <li>Appointment reminder workflows</li>
+              <li>AI-powered patient reactivation emails</li>
+              <li>Follow-up sequence automation</li>
+              <li>Error alert systems</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">n8n Cloud</span>
+              <span class="stack-tag">Google Sheets</span>
+              <span class="stack-tag">Google Forms</span>
+              <span class="stack-tag">OpenAI GPT-4o-mini</span>
+              <span class="stack-tag">Gmail API</span>
+              <span class="stack-tag">HTML/CSS/JS</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/pure_smile" class="btn btn-ghost btn-sm"
+              target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+            <!-- REPLACE: update href with actual live demo URL -->
+            <a href="https://drive.google.com/file/d/1hJsubY_HLneqtI-F2nkVsYyYcuPH2Fl6/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+            <!-- REPLACE: update href with actual case study URL -->
+            <a href="https://medium.com/@adeniranprecious002/i-found-a-1-000-upwork-job-post-and-built-the-entire-system-before-applying-7f50c7d1d4df?sharedUserId=adeniranprecious002"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-pencil'></i> Article
+            </a>
+            <a href="https://drive.google.com/file/d/1HVuCzrQ_KnGwJMA98rSRSBP_0UpXlUhY/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-book-content'></i> Case
+              Study</a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT 6 — Cloud Arcade Automation System ── -->
+        <article class="proj-card proj-card--featured reveal">
+          <!-- REPLACE: swap src with your actual project image -->
+          <!-- Example: src="images/ai_automation_projects/cloud-arcade.png" -->
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/cloud-arcade.png" alt="Cloud Arcade Automation System"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-joystick'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Cloud Arcade Automation System</h3>
+            <p class="proj-desc">Built a custom landing page and intelligent booking automation system for a premium
+              gaming lounge, featuring AI-assisted support and real-time admin alerts via Telegram.</p>
+            <ul class="proj-features-list">
+              <li>Automated booking workflows</li>
+              <li>Telegram admin alert system</li>
+              <li>AI support bot integration</li>
+              <li>Auto confirmation emails</li>
+              <li>GPT-powered Telegram assistant</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">HTML/CSS/JS</span>
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">Google Sheets</span>
+              <span class="stack-tag">Gmail API</span>
+              <span class="stack-tag">Telegram Bot</span>
+              <span class="stack-tag">OpenAI GPT-4o-mini</span>
+              <span class="stack-tag">Netlify</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="https://github.com/adeniranprecious002-ux/cloud-arcade" class="btn btn-ghost btn-sm"
+              target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+            <!-- REPLACE: update href with actual live demo URL -->
+            <a href="https://drive.google.com/file/d/1oatBlAPUxJN_o7LnQ9uSa6t4L4BgSk0J/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+            <!-- REPLACE: update href with actual case study URL -->
+            <a href="https://drive.google.com/file/d/1QZp8s3e57oXxXsITdhWs3APqy0S7MKS1/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-book-content'></i> Case
+              Study</a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT 7 — WULF NOIR — Grant Proposal Automation ── -->
+
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/wulf_noir.png" alt="WULF NOIR — Grant Proposal Automation"
+              class="proj-img" onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-joystick'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">WULF NOIR — Grant Proposal Automation</h3>
+            <p class="proj-desc">
+              An end-to-end AI grant proposal system for a Rotterdam-based talent foundation. A webhook trigger pulls
+              organisational DNA from Google Drive, runs a two-stage GPT-4o-mini pipeline to analyse the funder and
+              write a
+              tailored 6-section proposal, saves it to Google Docs, and emails the team — all in under 60 seconds.
+            </p>
+            <ul class="proj-features-list">
+              <li>Instant webhook trigger — fires from any form or tool</li>
+              <li>AI funder analysis — 7-field structured JSON via GPT-4o-mini</li>
+              <li>6-section proposal written from org DNA + funder criteria</li>
+              <li>Auto-saves proposal to Google Docs with funder-named title</li>
+              <li>Gmail notification with proposal link &amp; analysis summary</li>
+              <li>97% time reduction — 3-4 hrs → under 60 seconds</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">Make.com</span>
+              <span class="stack-tag">OpenAI GPT-4o-mini</span>
+              <span class="stack-tag">Google Drive</span>
+              <span class="stack-tag">Google Docs</span>
+              <span class="stack-tag">Gmail API</span>
+              <span class="stack-tag">Webhook</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <!-- REPLACE: update href with actual GitHub repo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-lock-alt'></i> Private Repo
+            </a>
+            <!-- REPLACE: update href with actual live demo URL -->
+            <a href="#" class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-link-external'></i> Demo</a>
+            <!-- REPLACE: update href with actual case study URL -->
+            <a href="https://drive.google.com/file/d/1c71M1j2cStpsZxFZEtrfSY7Q2-yQD4P_/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank"><i class='bx bx-book-content'></i> Case
+              Study</a>
+          </div>
+        </article>
+
+        <!-- ── AI PROJECT 8 — LunaPay RAG-Powered AI Customer Support Agent ── -->
+         <article class="proj-card proj-card--featured reveal">
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/lunapay-support.png"
+            alt="LunaPay — RAG-Powered AI Customer Support Agent"
+            class="proj-img"
+            onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-bot'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Completed</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">LunaPay — RAG-Powered AI Customer Support Agent</h3>
+            <p class="proj-desc">
+              Built a production-grade AI customer support agent for a fictional fintech
+              payment platform using Retrieval-Augmented Generation (RAG). LunaAI answers
+              customer questions strictly from LunaPay's official documentation —
+              returning grounded answers with source citations in under 2 seconds,
+              across three automated n8n workflows with no custom backend server required.
+            </p>
+            <ul class="proj-features-list">
+              <li>RAG pipeline — 6 docs chunked, embedded &amp; stored in Pinecone</li>
+              <li>AI Agent with GPT-4o-mini and per-session conversation memory</li>
+              <li>Source citations on every response via Sources panel in the UI</li>
+              <li>3 n8n workflows: ingestion, live chat API, and feedback logging</li>
+              <li>Google Sheets feedback log + Slack Block Kit alerts for negative feedback</li>
+              <li>Full SaaS frontend — 8 dashboard pages, API playground, Clerk auth</li>
+              <li>Weekly automated knowledge base refresh from Google Drive</li>
+              <li>Under $0.002 per customer interaction in API costs</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI GPT-4o-mini</span>
+              <span class="stack-tag">Pinecone</span>
+              <span class="stack-tag">RAG</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Clerk Auth</span>
+              <span class="stack-tag">Google Drive</span>
+              <span class="stack-tag">Google Sheets</span>
+              <span class="stack-tag">Slack API</span>
+              <span class="stack-tag">Lovable</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/adeniranprecious002-ux/lunapay-ai-support"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="https://drive.google.com/file/d/1UcHv_GnP2ETb8ObLz0x-vRQJn2xC8Jnk/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+            <a href="https://medium.com/@adeniranprecious002/how-i-built-a-rag-powered-ai-customer-support-agent-using-n8n-pinecone-and-gpt-4o-without-207bfb4c3fde"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-pencil'></i> Article
+            </a>
+            <a href="https://drive.google.com/file/d/1cD7CcjdGRfEk8J_Zx52njfPuja5cJhww/view?usp=sharing"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-book-content'></i> Case Study
+            </a>
+         </div>
+        </article>
+
+        <!-- ── AI PROJECT — QA-Agent ── -->
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap">
+            <img src="images/ai_automation_projects/qa-agent.png" alt="QA-Agent" class="proj-img"
+              onerror="this.parentElement.classList.add('proj-img-placeholder')" />
+            <div class="proj-img-fallback"><i class='bx bx-shield-quarter'></i></div>
+            <span class="proj-status-badge proj-status-badge--done">Live</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">QA-Agent — AI Regression &amp; Calculation Guard</h3>
+            <p class="proj-desc">
+              An autonomous QA pipeline that goes beyond UI regression testing into calculation
+              validation — it independently recomputes expected values from raw input data, compares
+              them against live API output, and when a mismatch is found, uses an LLM to explain the
+              likely root cause and suggest a follow-up test instead of firing a generic threshold alert.
+              Runs on a schedule with full observability into a live dashboard.
+            </p>
+            <ul class="proj-features-list">
+              <li>Independent recalculation — not a threshold ping, true calculation validation</li>
+              <li>AI-generated root-cause analysis on every anomaly (formula drift, rounding, stale cache)</li>
+              <li>Severity tiers (none / medium / high) with Slack alerting</li>
+              <li>Every check logged to Supabase with DB-level duplicate prevention</li>
+              <li>Live dashboard — pass rate, anomaly history, likely cause</li>
+              <li>Isolated error-handling workflow separate from anomaly detection</li>
+            </ul>
+            <div class="proj-stack">
+              <span class="stack-tag">n8n</span>
+              <span class="stack-tag">OpenAI GPT-4o</span>
+              <span class="stack-tag">Supabase</span>
+              <span class="stack-tag">Render</span>
+              <span class="stack-tag">Slack API</span>
+              <span class="stack-tag">Express</span>
+            </div>
+          </div>
+          <div class="proj-actions">
+            <a href="https://github.com/adeniranprecious002-ux/qa-agent-mock-api" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bxl-github'></i> Repo
+            </a>
+            <a href="https://qa-agent-dashboard.netlify.app/" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-link-external'></i> Demo
+            </a>
+            <a href="https://medium.com/@adeniranprecious002/i-dont-have-a-qa-background-so-i-built-an-ai-agent-to-prove-i-didn-t-need-one-d139eb14a970"
+              class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-pencil'></i> Article
+            </a>
+            <a href="https://drive.google.com/file/d/1TaXdoIDGYHB69lA686Lla7oxBQuAS3T5/view?usp=sharing" class="btn btn-ghost btn-sm" target="_blank">
+              <i class='bx bx-book-content'></i> Case Study
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /proj-grid -->
+
+      <!-- Back link -->
+      <div style="margin-top: 4rem;">
+        <a href="index.html#ai-projects" class="page-back">
+          <i class='bx bx-left-arrow-alt'></i> Back to Portfolio
+        </a>
+      </div>
+
+
+    </div><!-- /page-content -->
+  </div><!-- /page-wrap -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-logo">APA<span class="logo-dot">.</span></span>
+      <span>Embedded Systems · AI Automation · IoT</span>
+    </div>
+    <span class="footer-copy">© 2025 Adeniran Precious Adebayo</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
